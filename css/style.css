@@ -8,3 +8,8 @@
     font-size: 0.75em;
     text-decoration: none;
 }
+
+.img-crop {
+    outline: 8px solid #191c21;
+    outline-offset: -8px;
+}
