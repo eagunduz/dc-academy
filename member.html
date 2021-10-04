@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .member_contaianer {
+        padding: 32px 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        margin-top: 30px;
+    }
+
+    .member_contaianer h4 {
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+
+    .cart_tittle p {
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 0;
+        font-size: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    .cart_tittle span {
+        opacity: 0.8;
+        font-size: 15px;
+        letter-spacing: 0px;
+    }
+
+    .cart_img img {
+        width: 100%;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+
+
+    @media screen and (max-width:768px) {
+        .member_contaianer h4 {
+            font-size: 30px;
+        }
+    }
+</style>
+
+<body>
+
+    <section>
+        <div class="container member_contaianer">
+            <h4>Members who liked this class also liked</h4>
+            <div class="row">
+                <div class="col-12">
+
+                    <div class="swiper mySwiper">
+
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <div class="section_cart">
+                                    <div class="cart_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/2DMQb6ABKGnNhenm9cznKPGP?width=200&height=301&fit=cover&dpr=2"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="cart_tittle">
+                                        <p>Martin Scorsese</p>
+                                        <span>Teaches Filmmaking</span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="section_cart">
+                                    <div class="cart_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/3ntjXFVi9MBZXMi9if7ghpss?width=200&height=301&fit=cover&dpr=2"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="cart_tittle">
+                                        <p>Spike Lee</p>
+                                        <span>Teaches Independent Filmmaking</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="section_cart">
+                                    <div class="cart_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/K42EgdcRWTFa8ifP1go8BDoQ?width=200&height=301&fit=cover&dpr=2"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="cart_tittle">
+                                        <p>Ron Howard</p>
+                                        <span>Teaches Directing</span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="section_cart">
+                                    <div class="cart_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/t4m4d2cjyj4bt6C1wrkwVGZZ?width=200&height=301&fit=cover&dpr=2"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="cart_tittle">
+                                        <p>Issa Rae</p>
+                                        <span>Teaches Creating Outside The Lines</span>
+                                    </div>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>  -->
+
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: false,
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 10,
+                },
+            },
+        });
+
+
+    </script>
+
+</body>
+
+</html>
