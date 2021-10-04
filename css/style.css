@@ -2,8 +2,19 @@
     font-family: 'Oswald', sans-serif;
 }
 
+@media all and (max-device-width: 1400px) {
+    .h-title{font-size: 2.9em;}
+}
+
+@media all and (max-device-width: 310px) {
+    .h-title{font-size: 14vw;}
+}
+
+@media all and (max-device-width: 230px) {
+    .h-title{font-size: 10vw;}
+}
+
 .h-title {
-    font-size: 2.9em;
     font-weight: 700;
     line-height: 95%;
     word-spacing: normal;
