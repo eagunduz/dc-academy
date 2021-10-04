@@ -1,5 +1,12 @@
-.h-title {
+.font {
     font-family: 'Oswald', sans-serif;
+}
+
+.h-title {
+    font-size: 2.9em;
+    font-weight: 700;
+    line-height: 95%;
+    word-spacing: normal;
 }
 
 .arrow {
@@ -10,6 +17,5 @@
 }
 
 .img-crop {
-    outline: 8px solid #191c21;
-    outline-offset: -8px;
+    clip-path: inset(21px 0px 19px 0px);
 }
