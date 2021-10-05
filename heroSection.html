@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: #000;
+
+    }
+
+    header {
+        height: 100vh;
+        background-image: url('https://www.masterclass.com/course-images/attachments/s8qt4iw1a9j5dqv3l99acr2lovx5?width=1350&height=578&fit=cover&dpr=2');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center ;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .bg-div {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+        background: linear-gradient(to top, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 25%, rgba(0, 0, 0, 0) 45%) center center no-repeat;
+    }
+
+    .personal_hero {
+        height: 100vh;
+    }
+
+    .personal_detail img {
+        width: 100%;
+        padding: 60px 60px 0;
+    }
+
+    .personal_detail p {
+        color: #fff;
+    }
+
+
+    .line {
+        background-color: #fff;
+        width: 20px;
+        height: 4px;
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .personal_play {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .paly_list svg,
+    .paly_list span,.alt_span {
+        color: white;
+
+    }
+
+    .alt_span {
+        opacity: 0.8;
+    }
+    .paly_list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .personel_btn {
+        background: #f24462;
+        color: white;
+        display: block;
+        width: 100%;
+        padding: 10px 15px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+
+    .personel_btn:hover {
+        background:#f24461c2;
+        transition: 400ms all;
+    }
+</style>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="bg-div">
+
+                <div class="row justify-content-center personal_hero">
+
+                    <div class="col-lg-4 col-md-6 col-sm-5 align-self-end mb-3">
+                        <div class="personal_detail p-4">
+                            <img src="https://www.masterclass.com/course-images/attachments/rk06vteqxh8m88j8gso3gci9160c"
+                                alt="name">
+
+                            <span class="line mt-2"></span>
+
+                            <p class="fw-bold text-center ">Teaches Filmmaking</p>
+
+                            <div class="personal_play my-4">
+                                <div class="paly_list">
+                                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-icon">
+                                        <path
+                                            d="M8.653 6.117A.75.75 0 007.5 6.75v10.5a.75.75 0 001.153.633l8.25-5.25a.75.75 0 000-1.266l-8.25-5.25z"
+                                            fill="currentColor"></path>
+                                    </svg>
+
+                                    <span class="fw-normal fs-6">
+                                        TRAILER
+                                    </span>
+                                </div>
+
+                                <div class="paly_list">
+                                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-icon">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M9.16 5.429a.647.647 0 00-.651.642V6.5c0 .394-.345.714-.77.714-.424 0-.769-.32-.769-.714v-.429C6.97 4.947 7.93 4 9.16 4h10.65C21.04 4 22 4.947 22 6.071v6.108c0 1.124-.96 2.071-2.19 2.071h-.502c-.425 0-.77-.32-.77-.714 0-.395.345-.715.77-.715h.503c.338 0 .65-.268.65-.642V6.07a.647.647 0 00-.65-.642H9.16zM2 10.82c0-1.124.96-2.071 2.19-2.071h10.65c1.23 0 2.19.947 2.19 2.071v6.108c0 1.124-.96 2.071-2.19 2.071H4.19C2.96 19 2 18.053 2 16.929V10.82zm2.19-.642a.647.647 0 00-.652.642v6.108c0 .374.313.642.651.642H14.84c.339 0 .651-.268.651-.642V10.82a.647.647 0 00-.65-.642H4.188z"
+                                            fill="currentColor"></path>
+                                    </svg>
+
+                                    <span class="fw-normal fs-6">
+                                        SAMPLE
+                                    </span>
+                                </div>
+
+
+                                <div class="paly_list">
+                                    <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-icon">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6 15a.75.75 0 01.75.75v.75c0 .414.336.75.75.75h9a.75.75 0 00.75-.75v-.75a.75.75 0 011.5 0v.75a2.25 2.25 0 01-2.25 2.25h-9a2.25 2.25 0 01-2.25-2.25v-.75A.75.75 0 016 15zM8.47 9.53a.75.75 0 001.06 0L12 7.06l2.47 2.47a.75.75 0 101.06-1.06l-3-3a.75.75 0 00-1.06 0l-3 3a.75.75 0 000 1.06z"
+                                            fill="currentColor"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M12 15a.75.75 0 00.75-.75V6.375a.75.75 0 00-1.5 0v7.875c0 .414.336.75.75.75z"
+                                            fill="currentColor"></path>
+                                    </svg>
+
+                                    <span class="fw-normal fs-6">
+                                        SHARE
+                                    </span>
+                                </div>
+                            </div>
+
+                            <button class="personel_btn"> SIGN UP</button>
+                            <div class="fs-6 alt_span text-center mt-2">Starting at $17.70/month (billed annually)</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
