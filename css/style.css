@@ -1,5 +1,25 @@
+/* Paragraph Colors */
 .p-color {
   color: #828282;
+}
+
+.p-color-light {
+  color: #cccccc;
+}
+
+/* "See more" links */
+.more-link {
+  color: #8b8b8b;
+  text-decoration: none;
+}
+
+.more-link:hover {
+  color: #5e5e5e;
+}
+
+/* Cursor pointer for the whole accordion section */
+.acc {
+  cursor: pointer;
 }
 
 /* Button Overlay and Image properties */
