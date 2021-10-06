@@ -17,6 +17,29 @@
 
 	<style>
 		/* scrollbar is hidden on filter menu */
+		
+		.card-text{			
+			display: table-cell;
+			width: 250px;
+			height: 350px;
+			padding: 10px;
+			border: 5px solid rgba(0, 0, 0, .0);
+			text-align: center;
+			vertical-align:bottom;			
+		}
+
+		.card-title{
+			text-align: center;
+		}
+
+		.container{
+			background-color: black;
+		}
+
+		.card-img{
+			border-radius: 10px;  			  			
+		}
+
 		.filter-menu::-webkit-scrollbar {
 			display: none;
 		}
@@ -26,20 +49,19 @@
 		}
 	</style>
 	<body style="background-color: black">
-		<!--Header start-->
-		<!--Header end-->
 		<!-- all elements should be wrapped inside a container -->
 		<div class="container">
-			<div class="row">
+			<div class="row p-1">
 				<div class="col-12">
 					<h1 class="text-white">Arts & Entertainment</h1>
 				</div>
 			</div>
+			<br><br>
 			<div class="row">
 				<!--Main body start-->
 
 				<!--Nav bar start-->
-				<div class="col-12 col-lg-4">
+				<div class="col-12 col-lg-4 p-3">
 					<!-- when no responsive utility is declared, col-4 means %33.3 width on all displays, incl mobile. Current form means full width on mobile, %33.3 on large displays -->
 					<div class="row text-white">
 						<div class="d-flex flex-row flex-lg-column gap-3 gap-lg-0 overflow-scroll filter-menu">
@@ -48,6 +70,7 @@
 							<div class="col-auto">Just Added</div>
 							<div class="col-auto">Trending</div>
 							<div class="col-auto">Most Popular</div>
+							<br>
 							<div class="col-auto">Food</div>
 							<div class="col-auto">Design & Style</div>
 							<div class="col-auto">Arts & Entartainment</div>
@@ -65,37 +88,65 @@
 				<!--Nav bar end-->
 
 				<!--Main start-->
-				<div class="col-8" style="background-color: black">
+				<div class="col-8">
 					<!--8 Column-->
-					<div class="row">
+					<div class="row p-1 m-1">
 						<div class="col">
-							<!--Card deneme-->
-							<div class="card" style="background-color: black">
-								<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
-								<div class="card-body">
-									<h5 class="card-title">Annie Leibovitz</h5>
-									<p class="card-text">Teaches Photography</p>
+							<div class="card bg-dark text-white">
+								<img src="https://www.masterclass.com/course-images/attachments/kfZpCZ2BBhEEDKHZMhwCdXB9?width=250&height=444&fit=cover&dpr=2" class="card-img" alt="...">
+								<div class="card-img-overlay">
+								  <h5 class="card-title">ANNIE <br> LEIBOVITZ</h5>
+								  <p class="card-text">Teaches Photography</p>								  
 								</div>
-							</div>
-							<!--Card deneme-->
+							  </div>
 						</div>
 						<div class="col">
-							<!--Card deneme-->
-							<div class="card" style="background-color: black">
-								<img src="https://via.placeholder.com/150" class="card-img-top" alt="..." />
-								<div class="card-body">
-									<h5 class="card-title">Annie Leibovitz</h5>
-									<p class="card-text">Teaches Photography</p>
+							<div class="card bg-dark text-white">
+								<img src="https://www.masterclass.com/course-images/attachments/xPz5kvRMBMuphYC1L534jsoL?width=250&height=444&fit=cover&dpr=2" class="card-img" alt="...">
+								<div class="card-img-overlay">
+								  <h5 class="card-title">JIMMY <br> CHIN</h5>
+								  <p class="card-text">Teaches Adventure Photography.</p>								  
 								</div>
-							</div>
-							<!--Card deneme-->
+							  </div>
 						</div>
-						<div class="col bg-danger">6 Column</div>
+						<div class="col">
+							<div class="card bg-dark text-white">
+								<img src="https://www.masterclass.com/course-images/attachments/Kkf7nX47azGfiLjC7C3prHQr?width=200&height=356&fit=cover&dpr=2" class="card-img" alt="...">
+								<div class="card-img-overlay">
+								  <h5 class="card-title">FRANK <br> GEHRY</h5>
+								  <p class="card-text">Teaches Design and Architecture</p>
+								</div>
+							  </div>
+						</div>
 					</div>
-					<div class="row">
-						<div class="col bg-primary">6 Column</div>
-						<div class="col bg-secondary">6 Column</div>
-						<div class="col bg-danger">6 Column</div>
+					<div class="row p-1 m-1">
+						<div class="col">
+							<div class="card bg-dark text-white">
+								<img src="https://www.masterclass.com/course-images/attachments/jesu450ohznlgam3f2p7upm01efn?width=200&height=356&fit=cover&dpr=2" class="card-img" alt="...">
+								<div class="card-img-overlay">
+								  <h5 class="card-title">TYLER <br> MITCHELL</h5>
+								  <p class="card-text">Teaches Storytelling Through Portrait Photography</p>
+								</div>
+							  </div>
+						</div>
+						<div class="col">
+							<div class="card bg-dark text-white">
+								<img src="https://www.masterclass.com/course-images/attachments/j6uzfa46t8ptt74ftv8auajeqtc4?width=200&height=356&fit=cover&dpr=2" class="card-img" alt="...">
+								<div class="card-img-overlay">
+								  <h5 class="card-title">ES <br> DEVLIN</h5>
+								  <p class="card-text">Teaches Turning Ideas Into Art</p>
+								</div>
+							  </div>
+						</div>
+						<div class="col">
+							<div class="card bg-dark text-white">
+								<img src="https://www.masterclass.com/course-images/attachments/l5tr3c37vzs8ynbtmsspa5856jxk?width=200&height=356&fit=cover&dpr=2" class="card-img" alt="...">
+								<div class="card-img-overlay">
+								  <h5 class="card-title">DAVID <br> CARSON</h5>
+								  <p class="card-text">Teaches Graphic Design</p>
+								</div>
+							  </div>
+						</div>
 					</div>
 				</div>
 				<!--Main end-->
