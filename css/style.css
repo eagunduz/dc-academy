@@ -20,6 +20,8 @@
 /* Cursor pointer for the whole accordion section */
 .acc {
   cursor: pointer;
+  height: 18em;
+  overflow-y: scroll;
 }
 
 /* Button Overlay and Image properties */
