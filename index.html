@@ -22,6 +22,18 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
     />
 
+    <!-- Alpine Collapse Plugin -->
+    <script
+      defer
+      src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"
+    ></script>
+
+    <!-- Alpine JS Core -->
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"
+    ></script>
+
     <title>MasterClass</title>
   </head>
   <body style="background-color: #000000">
@@ -148,10 +160,15 @@
           </section>
 
           <!-- Accordion -->
-          <section id="accordion" class="mt-4 acc">
+          <section class="mt-4 acc noselect">
             <h6 class="text-white fw-bold">Browse Lesson Plan</h6>
-            <div class="card" style="background-color: #191c21">
-              <div class="card-header border-0" id="headingOne">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
+              <div class="card-header border-0">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
                   style="max-width: 100%"
@@ -164,12 +181,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">09:13</p>
                   <p class="p-color-light">
@@ -187,7 +199,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -201,12 +218,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">14:03</p>
                   <p class="p-color-light">
@@ -224,7 +236,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -238,12 +255,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">11:46</p>
                   <p class="p-color-light">
@@ -260,7 +272,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -274,12 +291,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">14:03</p>
                   <p class="p-color-light">
@@ -297,7 +309,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -311,12 +328,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">13:47</p>
                   <p class="p-color-light">
@@ -333,7 +345,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -347,12 +364,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">11:45</p>
                   <p class="p-color-light">
@@ -370,7 +382,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -384,12 +401,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">12:14</p>
                   <p class="p-color-light">
@@ -406,7 +418,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -420,12 +437,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">13:00</p>
                   <p class="p-color-light">
@@ -443,7 +455,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -457,12 +474,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">08:54</p>
                   <p class="p-color-light">
@@ -480,7 +492,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -495,12 +512,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">17:43</p>
                   <p class="p-color-light">
@@ -518,7 +530,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -532,12 +549,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">18:39</p>
                   <p class="p-color-light">
@@ -555,7 +567,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -569,12 +586,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">07:30</p>
                   <p class="p-color-light">
@@ -592,7 +604,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -606,12 +623,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">09:52</p>
                   <p class="p-color-light">
@@ -629,7 +641,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -643,12 +660,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">15:56</p>
                   <p class="p-color-light">
@@ -666,7 +678,12 @@
               </div>
             </div>
 
-            <div class="card" style="background-color: #191c21">
+            <div
+              class="card"
+              style="background-color: #191c21"
+              x-data="{ expanded: false }"
+              @click="expanded = ! expanded"
+            >
               <div class="card-header border-0" id="headingOne">
                 <span
                   class="d-inline-block text-truncate mb-0 text-light"
@@ -680,12 +697,7 @@
                 ></i>
               </div>
 
-              <div
-                id="collapseOne"
-                class="collapse hide"
-                aria-labelledby="headingOne"
-                data-parent="#accordion"
-              >
+              <div x-show="expanded" x-collapse>
                 <div class="card-body">
                   <p class="p-color-light" style="line-height: 0">18:30</p>
                   <p class="p-color-light">
