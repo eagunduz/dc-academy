@@ -1,23 +1,15 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
+	
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
-			crossorigin="anonymous"
-		/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous"/>
 
 		<title>Agile Board</title>
 	</head>
 
-	<style>
-		/* scrollbar is hidden on filter menu */
-
+	<style> /* scrollbar is hidden on filter menu */		
 		.card-text {
 			display: table-cell;
 			width: 250px;
@@ -43,24 +35,22 @@
 		.filter-menu::-webkit-scrollbar {
 			display: none;
 		}
+		
 		.filter-menu {
 			-ms-overflow-style: none;
 			scrollbar-width: none;
 		}
 	</style>
-	<body style="background-color: black">
-		<!-- all elements should be wrapped inside a container -->
+
+	<body style="background-color: black"> <!-- all elements should be wrapped inside a container -->		
 		<div class="container">
 			<div class="row p-1">
 				<div class="col-12">
 					<h1 class="text-white">Arts & Entertainment</h1>
 				</div>
 			</div>
-			<br /><br />
+			<br>
 			<div class="row">
-				<!--Main body start-->
-
-				<!--Nav bar start-->
 				<div class="col-12 col-lg-4 p-3">
 					<!-- when no responsive utility is declared, col-4 means %33.3 width on all displays, incl mobile. Current form means full width on mobile, %33.3 on large displays -->
 					<div class="row text-white">
@@ -70,7 +60,7 @@
 							<div class="col-auto">Just Added</div>
 							<div class="col-auto">Trending</div>
 							<div class="col-auto">Most Popular</div>
-							<br />
+							<br>
 							<div class="col-auto">Food</div>
 							<div class="col-auto">Design & Style</div>
 							<div class="col-auto">Arts & Entartainment</div>
@@ -84,142 +74,85 @@
 							<div class="col-auto">Wellness</div>
 						</div>
 					</div>
-				</div>
-				<!--Nav bar end-->
-
-				<!--Main start-->
-				<div class="col-8">
-					<!--8 Column-->
+				</div>				
+				
+				<div class="col-8">					
 					<div class="row p-1 m-1">
 						<div class="col-12 col-md-6 col-lg-4 col-xl-3">
 							<div class="card bg-transparent">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/kfZpCZ2BBhEEDKHZMhwCdXB9?width=250&height=444&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
+								<img src="https://www.masterclass.com/course-images/attachments/kfZpCZ2BBhEEDKHZMhwCdXB9?width=250&height=444&fit=cover&dpr=2" class="card-img" alt="..."/>
 								<div class="card-img-overlay text-white">
 									<div class="d-flex flex-column h-100 justify-content-end text-center">
-										<p class="h3">Victoria III</p>
-										<p>Learn espionage from world's best</p>
+										<p class="h3">ANNIE LEIBOVITZ</p>
+										<p>Teaches Photography</p>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card bg-dark text-white">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/kfZpCZ2BBhEEDKHZMhwCdXB9?width=250&height=444&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
-								<div class="card-img-overlay">
-									<h5 class="card-title">
-										ANNIE <br />
-										LEIBOVITZ
-									</h5>
-									<p class="card-text">Teaches Photography</p>
+						<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+							<div class="card bg-transparent">
+								<img src="https://www.masterclass.com/course-images/attachments/xPz5kvRMBMuphYC1L534jsoL?width=300&height=533&fit=cover&dpr=2" class="card-img" alt="..."/>
+								<div class="card-img-overlay text-white">
+									<div class="d-flex flex-column h-100 justify-content-end text-center">
+										<p class="h3">JIMMY CHIN</p>
+										<p>Teaches Adventure Photography</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card bg-dark text-white">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/xPz5kvRMBMuphYC1L534jsoL?width=250&height=444&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
-								<div class="card-img-overlay">
-									<h5 class="card-title">
-										JIMMY <br />
-										CHIN
-									</h5>
-									<p class="card-text">Teaches Adventure Photography.</p>
+						<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+							<div class="card bg-transparent">
+								<img src="https://www.masterclass.com/course-images/attachments/Kkf7nX47azGfiLjC7C3prHQr?width=300&height=533&fit=cover&dpr=2" class="card-img" alt="..."/>
+								<div class="card-img-overlay text-white">
+									<div class="d-flex flex-column h-100 justify-content-end text-center">
+										<p class="h3">FRANK GEHRY</p>
+										<p>Teaches Design and Architecture</p>
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="col">
-							<div class="card bg-dark text-white">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/Kkf7nX47azGfiLjC7C3prHQr?width=200&height=356&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
-								<div class="card-img-overlay">
-									<h5 class="card-title">
-										FRANK <br />
-										GEHRY
-									</h5>
-									<p class="card-text">Teaches Design and Architecture</p>
+					<div class="row p-1 m-1">
+						<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+							<div class="card bg-transparent">
+								<img src="https://www.masterclass.com/course-images/attachments/jesu450ohznlgam3f2p7upm01efn?width=300&height=533&fit=cover&dpr=2" class="card-img" alt="..."/>
+								<div class="card-img-overlay text-white">
+									<div class="d-flex flex-column h-100 justify-content-end text-center">
+										<p class="h3">TYLER MITCHELL</p>
+										<p>Teaches Storytelling Through Portrait Photography</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+							<div class="card bg-transparent">
+								<img src="https://www.masterclass.com/course-images/attachments/j6uzfa46t8ptt74ftv8auajeqtc4?width=300&height=533&fit=cover&dpr=2" class="card-img" alt="..."/>
+								<div class="card-img-overlay text-white">
+									<div class="d-flex flex-column h-100 justify-content-end text-center">
+										<p class="h3">ES DEVLIN</p>
+										<p>Teaches Turning Ideas Into Art</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 col-lg-4 col-xl-3">
+							<div class="card bg-transparent">
+								<img src="https://www.masterclass.com/course-images/attachments/l5tr3c37vzs8ynbtmsspa5856jxk?width=300&height=533&fit=cover&dpr=2" class="card-img" alt="..."/>
+								<div class="card-img-overlay text-white">
+									<div class="d-flex flex-column h-100 justify-content-end text-center">
+										<p class="h3">DAVID CARSON</p>
+										<p>Teaches Graphic Design</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="row p-1 m-1">
-						<div class="col">
-							<div class="card bg-dark text-white">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/jesu450ohznlgam3f2p7upm01efn?width=200&height=356&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
-								<div class="card-img-overlay">
-									<h5 class="card-title">
-										TYLER <br />
-										MITCHELL
-									</h5>
-									<p class="card-text">Teaches Storytelling Through Portrait Photography</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card bg-dark text-white">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/j6uzfa46t8ptt74ftv8auajeqtc4?width=200&height=356&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
-								<div class="card-img-overlay">
-									<h5 class="card-title">
-										ES <br />
-										DEVLIN
-									</h5>
-									<p class="card-text">Teaches Turning Ideas Into Art</p>
-								</div>
-							</div>
-						</div>
-						<div class="col">
-							<div class="card bg-dark text-white">
-								<img
-									src="https://www.masterclass.com/course-images/attachments/l5tr3c37vzs8ynbtmsspa5856jxk?width=200&height=356&fit=cover&dpr=2"
-									class="card-img"
-									alt="..."
-								/>
-								<div class="card-img-overlay">
-									<h5 class="card-title">
-										DAVID <br />
-										CARSON
-									</h5>
-									<p class="card-text">Teaches Graphic Design</p>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
-				<!--Main end-->
 			</div>
-			<!--Main body end-->
-		</div>
+		</div>				
 
-		<script
-			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
-			integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
-			integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
-			crossorigin="anonymous"
-		></script>
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
 	</body>
+
 </html>
