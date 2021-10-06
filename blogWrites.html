@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+
+
+    .writes_contaianer p,
+    .writes_tittle span {
+        opacity: 0.8;
+    }
+
+    .writes_cart {
+        position: relative;
+    }
+
+    .writes_tittle {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to top, #191c21 0, rgba(25, 28, 33, 0.6) 61%, rgba(25, 28, 33, 0) 99%) center no-repeat;
+    }
+
+    .writes_img img {
+        width: 100%;
+        cursor: pointer;
+    }
+
+
+    .writes_last {
+        height: 100%;
+    }
+</style>
+
+<body>
+
+    <section>
+        <div class="container writes_contaianer">
+            <div class="row d-flex justify-content-center">
+                <div class="col-sm-5  col-md-8 col-lg-8">
+                    <h4 class="fs-1 fw-bold text-center mt-5 ">Learn from the world’s best</h4>
+                    <p class="text-center fs-6 py-2">Pursue your passion with online classes taught by award - winning
+                        chefs,
+                        writers, and performers. With 90+ hours of lessons, you’ll never stop learning.</p>
+                </div>
+                <div class="col-12">
+
+                    <div class="swiper writesSwiper">
+
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+
+                                <div class="writes_cart">
+                                    <div class="writes_img">
+                                        <img src="https://www.masterclass.com/webpack/_/AF-e74ed29c4ea475d3360ebcdbd5ee1a2c.jpg"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="writes_tittle text-center pb-2">
+                                        <h6 class="fw-bold fs-6 mb-1">AARON <br> FRANKLIN </h6>
+                                        <span class="text-center fs-6 fw-normal">Teaches Texas-Style <br> BBQ </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="writes_cart">
+                                    <div class="writes_img">
+                                        <img src="https://www.masterclass.com/webpack/_/NG-c37291d67885259f31d906f0e62aea3f.jpg"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="writes_tittle text-center pb-2">
+                                        <h6 class="fw-bold fs-6 mb-1">NEIL <br> GAIMAN </h6>
+                                        <span class="text-center fs-6 fw-normal">Teaches The Art of <br> Storytelling
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="writes_cart">
+                                    <div class="writes_img">
+                                        <img src="https://www.masterclass.com/webpack/_/AL-cc3260a309c29ff779028779583f4cc0.jpg"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="writes_tittle text-center pb-2">
+                                        <h6 class="fw-bold fs-6 mb-1">ANNIE <br> GAIMAN </h6>
+                                        <span class="text-center fs-6 fw-normal">Teaches <br> Photography </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="writes_cart">
+                                    <div class="writes_img">
+                                        <img src="https://www.masterclass.com/webpack/_/DN-7fee85fa191dc95e0f99485f3e541e2e.jpg"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="writes_tittle text-center pb-2">
+                                        <h6 class="fw-bold fs-6 mb-1">DANIEL <br> NEGREANU </h6>
+                                        <span class="text-center fs-6 fw-normal">Teaches <br> Poker </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="writes_cart">
+                                    <div class="writes_img">
+                                        <img src="https://www.masterclass.com/webpack/_/PT-971bd79632424d9be24a2a1dfca75f90.jpg"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div class="writes_tittle text-center pb-2">
+                                        <h6 class="fw-bold fs-6 mb-1">PENN AND <br> TELLLER </h6>
+                                        <span class="text-center fs-6 fw-normal">Teaches The Art of <br> Magic </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-slide">
+
+                                <div class="writes_cart">
+                                    <div class="writes_img">
+                                        <img src="https://www.masterclass.com/webpack/_/SA-7f2f0ad0ca187e80bc266e1d12fb67b7.jpg"
+                                            alt="slider1">
+                                    </div>
+
+                                    <div
+                                        class="writes_tittle writes_last text-center d-flex justify-content-center align-items-center ">
+                                        <h4 class="fw-bold fs-6 mb-1">SELL ALL</h4>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+
+                        <!-- <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>  -->
+
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+
+                </div>
+
+                <div class="col-sm-12 col-md-12 mt-5 d-flex justify-content-center">
+                    <button type="button" class="btn btn-danger px-4 py-2">SIGN UP </button>
+                </div>
+
+                <div class="col-12 mt-4 text-center ">
+                   <p class="fs-6 fw-lighter ">Scroll to continue reading      <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-text-h8"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.47 8.845a.75.75 0 011.06 0l5.47 5.47 5.47-5.47a.75.75 0 111.06 1.06l-6 6a.75.75 0 01-1.06 0l-6-6a.75.75 0 010-1.06z" fill="currentColor"></path></svg>          </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".writesSwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: false,
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+
+    </script>
+
+</body>
+
+</html>
