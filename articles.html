@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    .artisle__container span {
+        border-bottom: 1px solid black;
+    }
+
+    .articles_box {
+        border: 1px solid #dbdde1;
+        overflow: hidden;
+        margin: 15px 0;
+    }
+
+    .articles_box:hover {
+        border: 1px solid #000;
+        box-shadow: inset 0 0 0 1px #000;
+        transition: 300ms all;
+    }
+
+</style>
+
+<body>
+
+    <div class="container artisle__container mt-5">
+        <div class="row">
+            <div class="col-12 mb-4">
+                <span class="fs-6 fw-bolder d-block pb-1">CATEGORIES</span>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/2RVFWrso65XhSHKyodr5eI/257da38cc3edb9592e23a81b0338bda7/culinary_arts_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Food</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/2boa55uMGesGgotVMuQPaz/bb2dd2098b1190f08ec80ad864ed796c/Design__Photography____Fashion.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Desing & Style</p>
+                </div>
+            </div>
+
+            
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/42OHARvUg6Eo0njEa3ADDf/bbfac2e6d48b3fcf09d6190e8768dc09/Film___TV_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Arts & Enter</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/6fRMQzhdFmI0BCV7YtMzeF/7cafbbd63860452b0576bf21cda3bb7e/Music___Entertainment_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Music</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/7IkiFbOtUxNxeA12otguva/aa6bb6ccc1ebb6fadfdd2742e4bfa11e/Business__Politics___Society_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Business</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/5srgAojqiZmR7sc0UjtXQb/a4e41e5d3e9cec61599e67148bbcd93c/Science___Technology_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Science & Tech</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/3HoZEopeG2e8HpmFvmplUh/c24f9022a9c54b1d3637fdfd02525d45/Sports___Games_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Sport & Gaming</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/3gxYY24owNfZ4xZegbMVm2/bcd6e432ca942dc5658d824ce12b5d8c/Writing_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Writing</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/4IERGFUwkzlu96xWiq9OOQ/97bf472ccd0f4a1f5bd86a3608fc9520/Lifestyle_2x.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Home & Life</p>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-4 ">
+                <div class="articles_box d-flex flex-column justify-content-center align-items-center p-4">
+                    <img src="https://images.ctfassets.net/3s5io6mnxfqz/3EoLq5WpFufvUTOhIM25Gc/2911795f0d227499498486cea3b02741/Screen_Shot_2021-02-11_at_1.43.34_PM.png?fit=fill&fl=progressive&fm=jpg&h=200&w=200"
+                        alt="food" width="96px" height="96px">
+                    <p class="fw-normaş fs-6 mt-3">Wellness</p>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
