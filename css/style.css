@@ -1,3 +1,8 @@
+/* Font */
+.font {
+  font-family: "Oswald", sans-serif;
+}
+
 /* Paragraph Colors */
 .p-color {
   color: #828282;
