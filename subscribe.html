@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background: #000;
+    }
+
+    .subscribe_box p {
+        opacity: 0.6;
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .form_btn {
+        height: 45px;
+        background: transparent;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .form_btn:hover {
+        background: transparent;
+        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+    }
+
+    .mail_input {
+        background: #191C21;
+        border-radius: 5px;
+        height: 45px;
+        border: 0;
+        border: 1px solid #272c33;
+    }
+
+    .mail_input::placeholder {
+        color: grey;
+        font-weight: 600;
+        padding-left: 10px;
+    }
+
+    .form {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .form_btn {
+        margin-left:15px;
+    }
+
+    .checkbox {
+        width: 100%;
+        margin: 8px auto;
+        position: relative;
+        display: block;
+    }
+
+    .checkbox label {
+        position: relative;
+        min-height: 34px;
+        display: block;
+        padding-left: 35px;
+        margin-bottom: 0;
+        font-weight: normal;
+        cursor: pointer;
+
+    }
+
+    .checkbox label span {
+        position: absolute;
+        top: 42%;
+        transform: translateY(-50%);
+        font-weight: 400;
+        font-size: 12px;
+        color: white;
+        opacity: 0.6;
+    }
+
+    .checkbox label:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 4px;
+        width: 20px;
+        height: 20px;
+        transition: transform 0.28s ease;
+        border-radius: 3px;
+        border: 1px solid #272c33;
+        background: #191C21;
+    }
+
+    .checkbox label:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 5px;
+        border-bottom: 2px solid white;
+
+        border-left: 2px solid white;
+        transform: rotate(-45deg) scale(0);
+        transition: transform ease 0.25s;
+        position: absolute;
+        top: 12px;
+        left: 10px;
+    }
+
+    .checkbox input[type="checkbox"] {
+        width: auto;
+        opacity: 0.00000001;
+        position: absolute;
+        left: 0;
+        margin-left: -20px;
+    }
+
+    .checkbox input[type="checkbox"]:checked~label:before {
+        border: 1px solid #272c33;
+    }
+
+    .checkbox input[type="checkbox"]:checked~label:after {
+        transform: rotate(-45deg) scale(1);
+    }
+
+    .checkbox input[type="checkbox"]:focus+label::before {
+        outline: 0;
+    }
+
+
+    @media screen and (max-width:768px) {
+        .form {
+        display: block;
+    }
+    .subscribe_box {
+        text-align: center;
+        margin-bottom: 35px;
+    }
+
+    .form_btn {
+        width: 100%;
+        margin: 10px 0 0 0;
+    }
+    }
+</style>
+
+<body>
+
+    <div class="container pt-5">
+        <div class="row">
+
+            <div class="col-sm-12 col-lg-6 ">
+                <div class="subscribe_box">
+                    <h6 class="fw-bold fs-3 text-white mb-3"> Try some of our classes</h6>
+                    <p class="text-white">Enter your email and we’ll send you some samples of our favorite
+                        classes.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-6">
+                <div class="subscribe_box2">
+                    <form action="" method="get" class="form">
+
+                        <div class="form ">
+                            <div class="form_box1 d-flex flex-column w-100 ">
+
+                                <input type="text" placeholder="Enter Email Adress" class=" mail_input w-100 "
+                                    name="name" id="email" required>
+
+
+                                <div class="form_box1 d-flex flex-row">
+                                
+                                    <div class="checkbox">
+                                        <input type="checkbox" id="checkbox" name="" value="">
+                                        <label for="checkbox"><span> I agree to receive email updates</span></label>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <button type="button"
+                                class="btn form_btn btn-secondary w-40  px-5 fw-bold  ">SUBMIT</button>
+                        </div>
+
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
