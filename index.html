@@ -1,0 +1,149 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DC Academy</title>
+
+		<!-- Bootstrap CSS -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+			crossorigin="anonymous"
+		/>
+		<style>
+			:root {
+				--accent-color: #ffc06d;
+			}
+
+			body {
+				background-color: #000;
+				color: #fff;
+			}
+
+			.rounded {
+				border-radius: 1.2rem !important;
+			}
+
+			/* Button Styling */
+			.cta-button-white {
+				padding: 0.25rem 1.25rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: none;
+				border-radius: 0.25rem;
+				margin-top: 1.5rem;
+				transition: background-color 0.2s ease-in-out;
+			}
+			.cta-button-white:hover {
+				background-color: var(--accent-color);
+				color: #fff;
+			}
+
+			.tile-image-container {
+				max-width: 220px;
+			}
+
+			.nameplate__separator {
+				display: block;
+				margin: 0.25rem auto 1rem;
+				width: 1.2rem;
+				height: 0.25rem;
+				background: white;
+			}
+
+			.star-image-target {
+				width: 100%;
+				height: 0;
+				background-size: contain;
+				background-position: center;
+				background-repeat: no-repeat;
+			}
+
+			.gradient-bottom {
+				background: linear-gradient(to top, #191c21 0, rgba(25, 28, 33, 0.6) 25%, rgba(25, 28, 33, 0) 45%) center
+					no-repeat;
+			}
+
+			@media screen and (max-width: 767px) {
+				.star-image-target {
+					background-image: url("./assets/cameron-mobile.jpeg");
+					padding-top: 150%;
+				}
+
+				.gradient-target {
+					background: linear-gradient(to top, rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 45%) center
+						center no-repeat;
+				}
+			}
+
+			@media screen and (min-width: 768px) {
+				.star-image-target {
+					background-image: url("./assets/cameron.jpeg");
+					padding-top: 43%;
+				}
+
+				.gradient-target {
+					background: linear-gradient(to left, rgb(0, 0, 0) 12%, rgba(0, 0, 0, 0.9) 20%, rgba(0, 0, 0, 0) 45%) center
+						center no-repeat;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<section class="index-section star">
+			<div class="container-fluid container-md">
+				<div class="row">
+					<div class="col-12">
+						<div class="text-center pt-4">
+							<p class="h1">Unlimited access to 100+ instructors. New classes added every month.</p>
+						</div>
+					</div>
+					<div class="my-4 star-image-target g-0 position-relative">
+						<div class="col-12">
+							<div
+								class="
+									d-flex
+									justify-content-center justify-content-md-end
+									py-5
+									position-absolute
+									top-0
+									start-0
+									bottom-0
+									end-0
+									gradient-target
+								"
+							>
+								<div
+									class="d-flex flex-column align-items-center justify-content-end justify-content-md-center pe-md-5"
+								>
+									<div class="bg-light text-black py-1 px-3 rounded">New</div>
+									<div class="align-content-center tile-image-container">
+										<img src="./assets/james-cameron.png" alt="James Cameron" class="img-fluid" />
+									</div>
+									<div class="nameplate__separator"></div>
+									<span class="text-center">Teaches Filmmaking</span>
+									<button class="cta-button-white">
+										<svg width="2em" height="2em" viewBox="0 0 24 24" fill="none">
+											<path
+												d="M8.653 6.117A.75.75 0 007.5 6.75v10.5a.75.75 0 001.153.633l8.25-5.25a.75.75 0 000-1.266l-8.25-5.25z"
+												fill="currentColor"
+											></path>
+										</svg>
+										Watch Trailer
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+</html>
