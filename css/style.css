@@ -82,6 +82,11 @@
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
+/* Added a class to apply to all buttons and accordion cards */
+.interactive {
+  background-color: #191c21;
+}
+
 /* MasterClass Defaults adjusted to fit the clone */
 .c-button {
   padding: 3px 7px;
