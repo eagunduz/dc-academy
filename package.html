@@ -15,23 +15,17 @@
             color: #fff;
         }
 
-        :root {
-            --white: #fff;
-        }
-
+/* 
         .package-box ul {
             list-style: none;
             margin: 48px 0 50px;
             padding-left: 0;
         }
 
-        .package-box ul li svg {
-            margin-right: 16px;
-        }
-
+      
         .package-box ul li {
             font-weight: 400;
-        }
+        } */
 
         .package-box p {
             font-weight: 500;
@@ -39,39 +33,50 @@
             letter-spacing: 0.03em;
             font-size: 3.2rem;
         }
-        
-        .package-box2 {
-            width: 100%;
-            height: 100%;
+
+       
+
+    
+
+       .package-box  ul {
+            list-style: none;
+            margin: 48px 0 50px;
+            padding-left: 15px;
         }
 
-        .package-box2 img {
-            width: 100%;
-            height: 100%;
+        .package-box li {
+            position: relative;
+            padding: 10px 0;
         }
 
-        .app-store svg {
-         
-         margin: 10px ;
+        .package-box li:before {
+            content: "•";
+            position: absolute;
+            left: -1em;
+            color: white;
         }
 
         .buy_box {
-         margin-top: 50px;
+            margin-top: 50px;
         }
+
         .buy_box p {
             font-size: 32px;
-            
+
             font-weight: 700;
         }
 
         .package_btn button {
-            border-radius:12px;
+            border-radius: 12px;
             padding: 12px 28px;
             font-weight: 500;
             font-size: 14px;
         }
 
-     
+      
+
+
+       
     </style>
 </head>
 
@@ -79,33 +84,38 @@
     <div class="container mt-5">
         <div class="row d-flex">
 
-            <div class="col-sm-12 col-md-4 col-lg-4 order-1  ">
+            <div class="col-sm-12 col-md-6 col-lg-4 order-1  ">
                 <div class="package-box">
                     <p class="h5 fs-2 fw-bold m-0">Stream anytime, anywhere, at your own pace.</p>
 
-                    <ul>
+                    <ul >
                         <li>
-                            <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-mr-4">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M18.886 7.326a.75.75 0 01.038 1.06l-7.68 8.25a.75.75 0 01-1.098 0l-4.32-4.64a.75.75 0 111.098-1.023l3.771 4.051 7.131-7.66a.75.75 0 011.06-.038z"
-                                    fill="currentColor"></path>
-                            </svg> Watch on desktop, TV, or mobile device
+                            Watch on desktop, TV, or mobile device
                         </li>
-                        <li> <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-mr-4">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M18.886 7.326a.75.75 0 01.038 1.06l-7.68 8.25a.75.75 0 01-1.098 0l-4.32-4.64a.75.75 0 111.098-1.023l3.771 4.051 7.131-7.66a.75.75 0 011.06-.038z"
-                                    fill="currentColor"></path>
-                            </svg>Offline viewing available for iOS</li>
-                        <li> <svg width="2em" height="2em" viewBox="0 0 24 24" fill="none" class="mc-mr-4">
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M18.886 7.326a.75.75 0 01.038 1.06l-7.68 8.25a.75.75 0 01-1.098 0l-4.32-4.64a.75.75 0 111.098-1.023l3.771 4.051 7.131-7.66a.75.75 0 011.06-.038z"
-                                    fill="currentColor"></path>
-                            </svg>Downloadable instructor guides for every class</li>
+
+                        <li>
+                             Offline viewing available for iOS
+                        </li>
+
+                        <li>
+                             Downloadable instructor guides for every class
+                        </li>
+                        <li>
+                            Watch on desktop, TV, or mobile device
+                        </li>
+                        
+                        <li>
+                             Offline viewing available for iOS
+                        </li>
+
+                        <li>
+                             Downloadable instructor guides for every class
+                        </li>
                     </ul>
 
                 </div>
 
-                <div class="app-store d-flex flex-wrap  justify-content-start">
+                <!-- <div class="app-store d-flex flex-wrap  justify-content-start">
                     <svg width="136" height="48" viewBox="0 0 136 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="135" height="47" rx="7.5" fill="black" stroke="#949AA4"></rect>
                         <path
@@ -175,7 +185,7 @@
                         <path
                             d="M118.68 15.9948C118.544 16.4838 118.249 16.9068 117.848 17.1898C117.446 17.4728 116.964 17.5977 116.484 17.5428C116.15 17.5521 115.818 17.4846 115.511 17.3449C115.205 17.2053 114.93 16.9968 114.708 16.734C114.485 16.4713 114.319 16.1604 114.221 15.8232C114.124 15.4859 114.097 15.1303 114.143 14.7809C114.098 14.4305 114.126 14.0741 114.223 13.7359C114.32 13.3976 114.485 13.0853 114.707 12.8203C114.928 12.5552 115.201 12.3435 115.507 12.1994C115.813 12.0554 116.144 11.9824 116.479 11.9854C117.889 11.9854 118.74 13.0026 118.74 14.6829V15.0513H115.162V15.1105C115.146 15.3069 115.169 15.5045 115.23 15.6908C115.291 15.8771 115.388 16.0478 115.515 16.1922C115.642 16.3365 115.797 16.4512 115.968 16.5289C116.14 16.6066 116.325 16.6456 116.511 16.6434C116.75 16.6737 116.993 16.6283 117.207 16.5127C117.422 16.3972 117.599 16.2169 117.717 15.9947L118.68 15.9948ZM115.161 14.2703H117.721C117.734 14.0908 117.711 13.9104 117.653 13.7408C117.596 13.5712 117.506 13.4162 117.388 13.2856C117.271 13.1551 117.129 13.0519 116.971 12.9828C116.814 12.9137 116.644 12.8801 116.474 12.8842C116.301 12.8819 116.129 12.9162 115.969 12.9851C115.809 13.0539 115.663 13.1559 115.541 13.2851C115.419 13.4143 115.322 13.568 115.257 13.7372C115.192 13.9064 115.159 14.0877 115.162 14.2703H115.161Z"
                             fill="white"></path>
-                    </svg> 
+                    </svg>
 
                     <svg width="144" height="48" viewBox="0 0 144 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <rect x="0.5" y="0.5" width="143" height="47" rx="7.5" fill="black" stroke="#949AA4"></rect>
@@ -349,7 +359,7 @@
                             fill="white"></path>
                     </svg>
 
-                </div>
+                </div> -->
 
                 <div class="buy_box ">
                     <p class="my-0">$17.70/mo</p>
@@ -362,14 +372,15 @@
                 </div>
             </div>
 
-            <div class="col-sm-12 col-md-8 col-lg-8 order-sm-1 mb-4">
-                <div class="package-box2">
+            <div class="  col-sm-12 col-md-6 col-lg-8 order-md-2 d-flex align-items-center">
+              
                     <img src="https://www.masterclass.com/webpack/_/devices-f12c75a3b48e955a511ea71f1f37283d.png"
-                        alt="">
-                </div>
+                        alt="" class="img-fluid">
+                
             </div>
         </div>
     </div>
 </body>
 
 </html>
+
