@@ -5,132 +5,145 @@
  */
 
 .font {
-	font-family: "Oswald", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 /* Paragraph Colors */
 .p-color {
-	color: #828282;
+  color: #828282;
 }
 
 .p-color-light {
-	color: #cccccc;
+  color: #cccccc;
 }
 
 /* "See more" links */
 .more-link {
-	color: #8b8b8b;
-	text-decoration: none;
+  color: #8b8b8b;
+  text-decoration: none;
 }
 
 .more-link:hover {
-	color: #5e5e5e;
+  color: #5e5e5e;
 }
 
 /* Cursor pointer for the whole accordion section */
 .acc {
-	cursor: pointer;
-	height: 18em;
-	overflow-y: scroll;
+  cursor: pointer;
+}
+
+/* Scroll property for accordion section */
+@media (max-width: 1400px) {
+  .acc {
+    height: 18em;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 768px) {
+  .acc {
+    height: 100%;
+    overflow: visible;
+  }
 }
 
 /* Button Overlay and Image properties */
 .btn-container {
-	position: relative;
+  position: relative;
 }
 
 .img-container img {
-	width: 100%;
-	height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .play {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .play {
-	background-color: black;
+  background-color: black;
 }
 
 /* Responsive button size adjustments */
 @media (max-width: 1400px) {
-	.c-button {
-		font-size: 2.8em;
-	}
+  .c-button {
+    font-size: 2.8em;
+  }
 }
 
 @media (max-width: 400px) {
-	.c-button {
-		font-size: 2em;
-	}
+  .c-button {
+    font-size: 2em;
+  }
 }
 
 @media (max-width: 330px) {
-	.c-button {
-		font-size: 1.3em;
-	}
+  .c-button {
+    font-size: 1.3em;
+  }
 }
 
 /* Prevent Highlighting Text */
 .noselect {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Safari */
-	-khtml-user-select: none; /* Konqueror HTML */
-	-moz-user-select: none; /* Old versions of Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
                                     supported by Chrome, Edge, Opera and Firefox */
 }
 
 /* Added a class to apply to all buttons and accordion cards */
 .interactive {
-	background-color: #191c21;
+  background-color: #191c21;
 }
 
 /* MasterClass Defaults adjusted to fit the clone */
 .c-button {
-	padding: 3px 7px;
+  padding: 3px 7px;
 
-	font-weight: 500;
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	letter-spacing: 0.12em;
-	text-transform: uppercase;
-	border-radius: 3em;
-	transition: background 250ms ease, box-shadow 250ms ease, opacity 250ms ease;
-	vertical-align: middle;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 3em;
+  transition: background 250ms ease, box-shadow 250ms ease, opacity 250ms ease;
+  vertical-align: middle;
 
-	color: #fff;
-	line-height: 2;
-	border: 0;
-	font-family: "Helvetica", "Arial", sans-serif;
+  color: #fff;
+  line-height: 2;
+  border: 0;
+  font-family: "Helvetica", "Arial", sans-serif;
 }
 
 .c-button--link {
-	background: none;
-	color: white;
+  background: none;
+  color: white;
 }
 
 /* Button hover opacity */
 .c-button--link:hover {
-	opacity: 75%;
+  opacity: 75%;
 }
 
 /* Rotate chevron element 90 degrees */
 .bi-chevron-down {
-	-webkit-transition: -webkit-transform 0.4s ease-in-out;
-	-ms-transition: -ms-transform 0.4s ease-in-out;
-	transition: transform 0.4s ease-in-out;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  -ms-transition: -ms-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 .rotate-180 {
-	transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 .card-header span {
-	max-width: 90%;
+  max-width: 90%;
 }
