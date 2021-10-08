@@ -33,11 +33,9 @@
 }
 
 /* Scroll property for accordion section */
-@media (max-width: 1400px) {
-  .acc {
-    height: 18em;
-    overflow-y: scroll;
-  }
+.acc {
+  height: 18em;
+  overflow-y: scroll;
 }
 
 @media (max-width: 768px) {
