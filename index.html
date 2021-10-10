@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DA-29</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    .gradient-target {
+      position: absolute;
+      right: -40%;
+      background: linear-gradient(to left, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0) 100%) center center no-repeat;
+      z-index: 1;
+      pointer-events: none;
+    }
+  </style>
+  <body style="background-color: black">
+    <div class="row text-white">
+      <div class="mt-5 mx-3">
+        <div class="d-flex flex-row gap-3 overflow-scroll filter-menu position-relative">
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">All Classes</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Just Added</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Trending</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Most Popular</div>
+          <br />
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Food</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Design & Style</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Arts & Entartainment</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Music</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Business</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Sports & Gaming</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Writing</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Science & Tech</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Home & Lifestyle</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Community & Government</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white">Wellness</div>
+          <div class="position-absolute gradient-target top-0 start-0 bottom-0"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
