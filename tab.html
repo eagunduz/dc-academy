@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .writes_tittle span {
+        opacity: 0.8;
+    }
+
+    .explore_cart {
+        position: relative;
+        border-radius: 1.2rem;
+        overflow: hidden;
+    }
+
+    .explore_tittle {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to top, #191c21 0, rgba(25, 28, 33, 0.6) 61%, rgba(25, 28, 33, 0) 99%) center no-repeat;
+    }
+
+    .explore_img {
+        position: relative;
+    }
+
+    .explore_separator {
+        background-color: white;
+        width: 20px;
+        height: 4px;
+        margin: auto;
+
+    }
+
+    .btn_explore {
+        background: #31333b;
+        border: none;
+        border-radius: 1rem;
+        font-size: 12px;
+        letter-spacing: 0.12em;
+    }
+
+
+    .btn_explore:hover {
+        opacity: 0.9;
+        background: #31333b;
+        transition: 500ms all;
+    }
+
+    .new_explore {
+        position: absolute;
+        width: 60px;
+        display: block;
+        height: 25px;
+        background: white;
+        color: black;
+        top: 20px;
+        border-radius: 1.2rem;
+        text-align: center;
+        left: 20px;
+        line-height: 22px;
+    }
+
+    .explore_tab .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link.active {
+        border: none;
+        border-radius: 50px;
+        border-color: transparent;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .explore_tab .nav-tabs,
+    .explore_tab .nav-tabs {
+        border: none;
+        border-color: transparent;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .nav-link:focus,
+    .nav-tabs .nav-link:hover {
+        border: none;
+        border-color: transparent;
+        overflow: hidden;
+        outline: none;
+    }
+
+    .explore_tab .nav-link {
+        color: white;
+        margin: 0 10px;
+        border-color: transparent;
+        padding: 2px 20px;
+        font-size: 12px;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: #272c33;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        font-size: 22px;
+        color: #949aa4;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        font-size: 22px;
+        color: #949aa4;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #272c33;
+    }
+
+    @media screen and (max-width:767px) {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            display: none;
+        }
+    }
+</style>
+
+<body>
+
+    <section>
+        <div class="container writes_contaianer">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-sm-12  col-md-12 col-lg-5 mb-3 d-flex justify-content-star align-items-center">
+                    <h4 class="fs-2 fw-bold  mt-5 ">Explore other classes</h4>
+                </div>
+
+                <div class="col-sm-12  col-md-12 col-lg-7 mb-3 d-flex justify-content-star align-items-end">
+                    <div class="explore_tab mb-2">
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#home" type="button" role="tab" aria-controls="home"
+                                    aria-selected="true">Feature</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                                    type="button" role="tab" aria-controls="profile" aria-selected="false">Most
+                                    Popular</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
+                                    type="button" role="tab" aria-controls="contact"
+                                    aria-selected="false">Trending</button>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="col-12 ">
+
+                            <div class="swiper writesSwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/vjfykiq1xs44fiafih9kpzlv1wz3?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/z5tjqe828b1mn6vkla5bjja86edj"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/6pb39h3vd3nlqp2c3i74b4k5kt13?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore">new</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/q48rj0jg4cj6snp3r088llnw20kg"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/j9qei652ydx1sh5ketfcs249qth0?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/h36xjhrm4atpewzq95ctc5uwwu9y"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Rock Climbing </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/En7Tb7eP5TpVVSRMooAdkLac?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/gxcisXqi7qVBZo8fnpW41w3t"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches the science</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/vjfykiq1xs44fiafih9kpzlv1wz3?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/z5tjqe828b1mn6vkla5bjja86edj"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/6pb39h3vd3nlqp2c3i74b4k5kt13?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore">new</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/q48rj0jg4cj6snp3r088llnw20kg"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/j9qei652ydx1sh5ketfcs249qth0?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/h36xjhrm4atpewzq95ctc5uwwu9y"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Rock Climbing </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/En7Tb7eP5TpVVSRMooAdkLac?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/gxcisXqi7qVBZo8fnpW41w3t"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches the science</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/vjfykiq1xs44fiafih9kpzlv1wz3?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/z5tjqe828b1mn6vkla5bjja86edj"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="col-12 ">
+
+                            <div class="swiper writesSwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/oAnaDAmeZeBrJ9Azj66JEfeF?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/z5tjqe828b1mn6vkla5bjja86edj"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/uoGiwszMKB6e28D7r9rhVmgR?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore">new</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/pHg9SujCqgMvKmbZxqLv3hFq"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/oAnaDAmeZeBrJ9Azj66JEfeF?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/z5tjqe828b1mn6vkla5bjja86edj"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/uoGiwszMKB6e28D7r9rhVmgR?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore">new</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/pHg9SujCqgMvKmbZxqLv3hFq"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <div class="col-12 ">
+
+                            <div class="swiper writesSwiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/vjfykiq1xs44fiafih9kpzlv1wz3?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore ">New</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/z5tjqe828b1mn6vkla5bjja86edj"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="swiper-slide">
+
+                                        <div class="explore_cart">
+                                            <div class="explore_img">
+                                                <img src="https://www.masterclass.com/course-images/attachments/6pb39h3vd3nlqp2c3i74b4k5kt13?width=300&height=533&fit=cover&dpr=2"
+                                                    alt="slider1" class="img-fluid">
+                                                <span class="new_explore">new</span>
+                                            </div>
+
+                                            <div class="explore_tittle text-center pb-4 px-4">
+                                                <img src="https://www.masterclass.com/course-images/attachments/q48rj0jg4cj6snp3r088llnw20kg"
+                                                    class="img-fluid">
+                                                <div class="explore_separator mb-3"></div>
+
+                                                <span class="text-center fs-6 fw-bold">Teaches Indian Cooking </span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="swiper-pagination"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm-12 col-md-12 mt-5 mb-5 d-flex justify-content-center">
+                    <button type="button" class="btn  btn-secondary btn_explore px-5 py-3 fw-bold ">EXPLORE CLASSES
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".writesSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 10,
+            pagination: false,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 15,
+                },
+            },
+        });
+
+
+    </script>
+
+</body>
+
+</html>
