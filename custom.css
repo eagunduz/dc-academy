@@ -1,46 +1,96 @@
 /** @format */
 /* Include variables here */
 :root {
-	--accent-color: #ffc06d;
-	--black: #000;
-	--white: #fff;
+  --accent-color: #ffc06d;
+  --black: #000;
+  --white: #fff;
 }
 /* General Styling */
 body {
-  background-color: var(--black) !important; /* overrides bootstrap only for development purposes */ 
-  color: var(--white) !important; /* overrides bootstrap only for development purposes */ 
+  background-color: var(
+    --black
+  ) !important; /* overrides bootstrap only for development purposes */
+  color: var(
+    --white
+  ) !important; /* overrides bootstrap only for development purposes */
 }
 
 /* Button Styling */
 .cta-button {
-	padding: 0.25rem 1.25rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: none;
-	border-radius: 0.25rem;
+  padding: 0.25rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 0.25rem;
   text-decoration: none;
   text-align: center;
-	transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
 }
 .cta-button--white {
   background: var(--white);
   color: var(--black);
 }
 .cta-button--white:hover {
-	background-color: var(--accent-color);
-	color: var(--black);
+  background-color: var(--accent-color);
+  color: var(--black);
 }
 .cta-button--accented {
   background-color: var(--accent-color);
   color: var(--black);
 }
 .cta-button--accented:hover {
-	background-color: var(--white);
-	color: var(--black);
+  background-color: var(--white);
+  color: var(--black);
 }
 .cta-button--mw300 {
   max-width: 300px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* arrow styles for slider */
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: #272c33;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  font-size: 22px;
+  color: #949aa4;
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "prev";
+  font-size: 22px;
+  color: #949aa4;
+}
+
+.swiper-pagination-bullet {
+  background-color: #272c33;
+}
+
+/* Font Sizes */
+.fs-xs {
+  font-size: x-small;
+}
+
+/* Gradients */
+.gradient-bottom {
+  background: linear-gradient(
+      to top,
+      #191c21 0,
+      rgba(25, 28, 33, 0.6) 61%,
+      rgba(25, 28, 33, 0) 99%
+    )
+    center no-repeat;
+}
+
+/* Rounded Corners */
+.rounded-lg {
+  border-radius: 1.2rem;
 }
