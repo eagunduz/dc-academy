@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .gift_tittle span {
+        opacity: 0.8;
+    }
+
+    .gift_cart {
+        position: relative;
+        overflow: hidden;
+    }
+
+    .gift_tittle {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: linear-gradient(to top, #191c21 0, rgba(25, 28, 33, 0.6) 61%, rgba(25, 28, 33, 0) 99%) center no-repeat;
+    }
+
+    .gift_img {
+        position: relative;
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        background-color: #272c33;
+        border-radius: 50%;
+        padding: 20px;
+    }
+
+    .swiper-button-next:after,
+    .swiper-rtl .swiper-button-prev:after {
+        font-size: 22px;
+        color: #949aa4;
+    }
+
+    .swiper-button-prev:after,
+    .swiper-rtl .swiper-button-next:after {
+        content: 'prev';
+        font-size: 22px;
+        color: #949aa4;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: #272c33;
+    }
+</style>
+
+<body>
+
+    <section>
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+
+                <div class="col-sm-12  col-md-12 col-lg-12 mt-5 mb-2">
+                    <h4 class="fs-3 fw-normal text-center  ">EXPLORE MORE CLASSES</h4>
+                </div>
+
+                <div class="gif_categori fw-bold fs-5 mb-3">Food</div>
+                <div class="col-12" style="position: relative;">
+
+                    <div class="swiper commingSwiper">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <div class="gift_cart">
+                                    <div class="gift_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/ti3wt6ga35bob00xwatqklqwdlgs?width=400&height=225&fit=cover&dpr=2"
+                                            alt="slider1" class="img-fluid">
+                                    </div>
+                                    <div class="gift_tittle p-2">
+                                        <h4 class="m-0 fs-5">Mashama Bailey</h4>
+                                        <span class="fs-6 fw-bold">Teaches Southern Cooking </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="gift_cart">
+                                    <div class="gift_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/ti3wt6ga35bob00xwatqklqwdlgs?width=400&height=225&fit=cover&dpr=2"
+                                            alt="slider1" class="img-fluid">
+                                    </div>
+                                    <div class="gift_tittle p-2">
+                                        <h4 class="m-0 fs-5">Mashama Bailey</h4>
+                                        <span class="fs-6 fw-bold">Teaches Southern Cooking </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="gift_cart">
+                                    <div class="gift_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/ti3wt6ga35bob00xwatqklqwdlgs?width=400&height=225&fit=cover&dpr=2"
+                                            alt="slider1" class="img-fluid">
+                                    </div>
+                                    <div class="gift_tittle p-2">
+                                        <h4 class="m-0 fs-5">Mashama Bailey</h4>
+                                        <span class="fs-6 fw-bold">Teaches Southern Cooking </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="swiper-slide">
+                                <div class="gift_cart">
+                                    <div class="gift_img">
+                                        <img src="https://www.masterclass.com/course-images/attachments/ti3wt6ga35bob00xwatqklqwdlgs?width=400&height=225&fit=cover&dpr=2"
+                                            alt="slider1" class="img-fluid">
+                                    </div>
+                                    <div class="gift_tittle p-2">
+                                        <h4 class="m-0 fs-5">Mashama Bailey</h4>
+                                        <span class="fs-6 fw-bold">Teaches Southern Cooking </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <script>
+
+        var swiper = new Swiper(".commingSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: false,
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            breakpoints: {
+                640: {
+                    slidesPerView: 1,
+                    spaceBetween: 40,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                },
+                1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
+
+
+    </script>
+
+</body>
+
+</html>
