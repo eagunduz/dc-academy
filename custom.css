@@ -1,0 +1,46 @@
+/** @format */
+/* Include variables here */
+:root {
+	--accent-color: #ffc06d;
+	--black: #000;
+	--white: #fff;
+}
+/* General Styling */
+body {
+  background-color: var(--black) !important; /* overrides bootstrap only for development purposes */ 
+  color: var(--white) !important; /* overrides bootstrap only for development purposes */ 
+}
+
+/* Button Styling */
+.cta-button {
+	padding: 0.25rem 1.25rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	border-radius: 0.25rem;
+	margin-top: 1.5rem;
+  text-decoration: none;
+	transition: background-color 0.2s ease-in-out;
+}
+.cta-button--white {
+  background: var(--white);
+  color: var(--black);
+}
+.cta-button--white:hover {
+	background-color: var(--accent-color);
+	color: var(--black);
+}
+.cta-button--accented {
+  background-color: var(--accent-color);
+  color: var(--black);
+}
+.cta-button--accented:hover {
+	background-color: var(--white);
+	color: var(--black);
+}
+.cta-button--mw300 {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
