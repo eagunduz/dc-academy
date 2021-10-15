@@ -17,10 +17,10 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: none;
+	border: transparent;
 	border-radius: 0.25rem;
-  text-decoration: none;
-  text-align: center;
+  	text-decoration: none;
+  	text-align: center;
 	transition: background-color 0.2s ease-in-out;
 }
 .cta-button--white {
