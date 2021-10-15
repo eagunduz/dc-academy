@@ -19,23 +19,28 @@
         h5  {
             text-align: left;
             line-height: 1.6;
-            letter-spacing: 0.01px;
-            opacity: 0.6 
+            letter-spacing: 0.01px;             
         }
         button{
             background-color: red;                 
         }
         img{
-            margin-left: 300px;
+            margin-left: 700px;
         }
         .textdiv{
-            margin-top: 160px;
+            margin-top: 50px;
         }
         .btn{
             border-radius: 10px;
             color: white;
             background-color: #f24462;
         }
+        @media (max-width: 768px) {
+            .mobileBackground{
+                background-image: url(https://www.masterclass.com/assets/gifting_landing_page/mobile_ribbon-05ed4a60b7c2e177ef09112fd7d8b43d030ded0d2979d32f852ff05c5f20dc23.png);
+            }
+        }
+
     </style>
 
   </head>
@@ -43,18 +48,19 @@
   <body>
     <section>
         <div class="container">
-            <div class="row">
-                <div class="col">
+            <div class="row mb-3">
+                <div class="col-12 col-md-4">
                     <div class="textdiv">
                         <h1 class="class">Inspire the person <br> who inspires you.</h1>
-                        <h5 class="class">Give a gift that helps them grow with online <br> classes taught by the world`s best.</h2>
+                        <h5 class="class text-muted">Give a gift that helps them grow with online <br> classes taught by the world`s best.</h2>
                         <a href="https://www.masterclass.com/plans?gift=true">
                             <button type="button" class="btn">GIVE ANNUAL MEMBERSHIP</button>
                         </a>                            
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-4">
                     <img class="img-fluid" src="https://www.masterclass.com/assets/gifting_landing_page/desktop_ribbon-43374745af3e7a330716fe0e03bf70e25a247098e39192d8068ad2ae62effe1b.png">
+                    <img src="https://www.masterclass.com/assets/gifting_landing_page/mobile_ribbon-05ed4a60b7c2e177ef09112fd7d8b43d030ded0d2979d32f852ff05c5f20dc23.png" class="mobileBackground">
                 </div>
             </div>
         </div>
