@@ -1,5 +1,6 @@
 <!-- @format -->
 <!-- TODO: Make close button for share modal appear on right side -->
+<!-- TODO: Celeb paragraphs should not be overflowing on smaller screens -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -140,7 +141,7 @@
 				<!-- Share Section -->
 				<div id="share_section" class="d-none d-lg-block col-1 mt-5 pt-4 text-center">
 					<div>
-						<p class="text-uppercase fw-bold">Save</p>
+						<p class="text-uppercase fw-bold" style="font-size: 12px; margin-bottom: 0.8em">Save</p>
 						<!-- Bookmark -->
 						<button class="bg-white" style="border: none">
 							<span
@@ -154,7 +155,7 @@
 						</button>
 					</div>
 					<div class="mt-4">
-						<p class="text-uppercase fw-bold">Share</p>
+						<p class="text-uppercase fw-bold" style="font-size: 12px; margin-bottom: 0.8em">Share</p>
 						<!-- Twitter -->
 						<a
 							href="https://twitter.com/intent/tweet?text=Jump%20to%20Section%20%23hashtag%20on%20%40twitter"
@@ -314,7 +315,7 @@
 							<div class="row">
 								<div class="col-9">
 									<p class="fw-bold celeb--name">Usher</p>
-									<p class="text-muted text-nowrap celeb--text">Teaches The Art of Performance</p>
+									<p id="wrapped-text" class="text-muted celeb--text text-nowrap">Teaches The Art of Performance</p>
 								</div>
 								<div class="col-3">
 									<img
@@ -456,6 +457,25 @@
 				share_link_field.setSelectionRange(0, 9999);
 				navigator.clipboard.writeText(share_link_field.value);
 			}
+
+			// Window Resize Listener
+			window.addEventListener("resize", function (event) {
+				let newWidth = window.innerWidth;
+				console.log(newWidth);
+				toggle_nowrap(newWidth);
+			});
+
+			// Change BS5 nowrap class based on screen size
+			function toggle_nowrap(width) {
+				const nowrap_text = document.getElementById("wrapped-text");
+				if (width < 1200) {
+					nowrap_text.classList.remove("text-nowrap");
+				} else {
+					nowrap_text.classList.add("text-nowrap");
+				}
+			}
+
+			toggle_nowrap(window.innerWidth);
 		</script>
 	</body>
 </html>
