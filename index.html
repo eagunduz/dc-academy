@@ -1,5 +1,5 @@
 <!-- @format -->
-
+<!-- TODO: Make close button for share modal appear on right side -->
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -77,7 +77,8 @@
 			}
 
 			.modal-header {
-				padding: 2px 16px;
+				border: none !important;
+				padding: 5px 15px;
 				color: black;
 			}
 
@@ -87,14 +88,22 @@
 
 			.modal-content {
 				position: relative;
+				top: 25%;
 				background-color: #fefefe;
 				margin: auto;
 				padding: 0;
-				border: 1px solid #888;
+				border: 1px solid #fff;
+				border-radius: 0px;
 				width: 45%;
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 				animation-name: animatetop;
 				animation-duration: 0.4s;
+			}
+
+			@media screen and (max-width: 768px) {
+				.modal-content {
+					width: 100%;
+				}
 			}
 
 			/* The Close Button */
@@ -119,7 +128,7 @@
 					opacity: 0;
 				}
 				to {
-					top: 0;
+					top: 25%;
 					opacity: 1;
 				}
 			}
@@ -129,7 +138,7 @@
 		<div class="container">
 			<div class="row">
 				<!-- Share Section -->
-				<div class="d-none d-lg-block col-1 mt-5 pt-4 text-center">
+				<div id="share_section" class="d-none d-lg-block col-1 mt-5 pt-4 text-center">
 					<div>
 						<p class="text-uppercase fw-bold">Save</p>
 						<!-- Bookmark -->
@@ -382,22 +391,31 @@
 		</div>
 
 		<!-- Share Button Modal -->
-		<div id="myModal" class="modal">
+		<div id="share_modal" class="modal">
 			<div class="modal-content">
 				<div class="modal-header">
 					<span class="close text-end">&times;</span>
 				</div>
-				<div class="modal-body">
+				<div class="modal-body" style="padding: 0 4em 2.5em 4em">
 					<p class="fs-4 fw-bold text-center">Spread the Word</p>
 					<p class="text-center">
 						Introduce someone to MasterClass and share the experience of learning from the world's greatest minds.
 					</p>
 					<form class="row g-3">
-						<div class="col-auto">
-							<input type="url" class="form-control" id="share_link_field" placeholder="Share link" readonly />
+						<div class="col-10">
+							<input
+								type="url"
+								class="form-control"
+								id="share_link_field"
+								placeholder="Share link"
+								size="100%"
+								readonly
+							/>
 						</div>
-						<div class="col-auto">
-							<button type="submit" class="btn btn-primary mb-3 text-uppercase">Copy</button>
+						<div class="col-2">
+							<button type="button" onclick="copy_link()" class="btn btn-dark w-100">
+								<span class="text-uppercase text-center">Copy</span>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -405,26 +423,39 @@
 		</div>
 
 		<script>
-			const modal = document.getElementById("myModal");
+			const modal = document.getElementById("share_modal");
 			const btn = document.getElementById("share_button");
 			const span = document.getElementsByClassName("close")[0];
+
+			const share_buttons_area = document.getElementById("share_section");
+			const share_link_field = document.getElementById("share_link_field");
+			share_link_field.value = window.location.href;
 
 			// When the user clicks on the button, open the modal
 			btn.onclick = function () {
 				modal.style.display = "block";
+				share_buttons_area.style.visibility = "hidden";
 			};
 
 			// When the user clicks on (x), close the modal
 			span.onclick = function () {
 				modal.style.display = "none";
+				share_buttons_area.style.visibility = "visible";
 			};
 
 			// When the user clicks anywhere outside of the modal, close it
 			window.onclick = function (event) {
 				if (event.target == modal) {
 					modal.style.display = "none";
+					share_buttons_area.style.visibility = "visible";
 				}
 			};
+
+			function copy_link() {
+				share_link_field.select();
+				share_link_field.setSelectionRange(0, 9999);
+				navigator.clipboard.writeText(share_link_field.value);
+			}
 		</script>
 	</body>
 </html>
