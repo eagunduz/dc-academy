@@ -61,15 +61,78 @@
 			.celeb-paragraph p {
 				margin-bottom: 0;
 			}
+
+			/* Share Button Modal */
+			.modal {
+				display: none; /* Hidden by default */
+				position: fixed; /* Stay in place */
+				z-index: 1; /* Sit on top */
+				left: 0;
+				top: 0;
+				width: 100%; /* Full width */
+				height: 100%; /* Full height */
+				overflow: auto; /* Enable scroll if needed */
+				background-color: rgb(0, 0, 0); /* Fallback color */
+				background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+			}
+
+			.modal-header {
+				padding: 2px 16px;
+				color: black;
+			}
+
+			.modal-body {
+				padding: 2px 16px;
+			}
+
+			.modal-content {
+				position: relative;
+				background-color: #fefefe;
+				margin: auto;
+				padding: 0;
+				border: 1px solid #888;
+				width: 45%;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				animation-name: animatetop;
+				animation-duration: 0.4s;
+			}
+
+			/* The Close Button */
+			.close {
+				color: #aaa;
+				float: right;
+				font-size: 28px;
+				font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+				color: black;
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			/* Add Animation */
+			@keyframes animatetop {
+				from {
+					top: -300px;
+					opacity: 0;
+				}
+				to {
+					top: 0;
+					opacity: 1;
+				}
+			}
 		</style>
 	</head>
 	<body class="bg-white text-black">
 		<div class="container">
 			<div class="row">
 				<!-- Share Section -->
-				<div class="d-none d-lg-block col-1 mt-5 pt-4 sticky-top text-center">
+				<div class="d-none d-lg-block col-1 mt-5 pt-4 text-center">
 					<div>
 						<p class="text-uppercase fw-bold">Save</p>
+						<!-- Bookmark -->
 						<button class="bg-white" style="border: none">
 							<span
 								><svg width="2em" height="2em" viewBox="0 0 24 24" fill="#fff" class="bookmark--icon">
@@ -135,19 +198,21 @@
 						</a>
 						<br />
 						<!-- Share Link -->
-						<svg
-							width="20"
-							height="20"
-							viewBox="0 0 16 15"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-							class="social--icon mt-3"
-						>
-							<path
-								d="M8.97439 0.172803L15.7004 5.53289C15.7939 5.60787 15.8694 5.7029 15.9212 5.81096C15.9731 5.91901 16 6.03734 16 6.1572C16 6.27706 15.9731 6.39539 15.9212 6.50344C15.8694 6.6115 15.7939 6.70653 15.7004 6.78151L8.96749 12.1554C8.84956 12.2488 8.7077 12.307 8.55818 12.3234C8.40866 12.3398 8.25755 12.3138 8.12216 12.2483C7.98677 12.1827 7.87259 12.0804 7.79272 11.9529C7.71285 11.8254 7.67052 11.6781 7.67058 11.5276V8.81655C6.20285 8.90852 4.79694 9.44092 3.63644 10.3442C2.47593 11.2475 1.61476 12.4797 1.16535 13.88C1.13901 13.9638 1.08672 14.037 1.01604 14.0891C0.945356 14.1411 0.859941 14.1694 0.772142 14.1697C0.684343 14.1694 0.598928 14.1411 0.528244 14.0891C0.457561 14.037 0.40527 13.9638 0.378931 13.88C0.00469029 12.7016 -0.0940529 11.453 0.0903077 10.2304C0.274668 9.00781 0.737212 7.84385 1.44231 6.8282C2.1474 5.81254 3.07623 4.97229 4.15724 4.37217C5.23825 3.77206 6.44259 3.4281 7.67748 3.36678V0.800561C7.67742 0.650146 7.71975 0.502758 7.79962 0.3753C7.87949 0.247843 7.99367 0.145477 8.12906 0.0799434C8.26445 0.0144095 8.41556 -0.011639 8.56508 0.00478528C8.7146 0.0212095 8.85645 0.0794415 8.97439 0.172803Z"
-								fill="currentColor"
-							></path>
-						</svg>
+						<a id="share_button" href="javascript:void(0)" onclick="share()">
+							<svg
+								width="20"
+								height="20"
+								viewBox="0 0 16 15"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+								class="social--icon mt-3"
+							>
+								<path
+									d="M8.97439 0.172803L15.7004 5.53289C15.7939 5.60787 15.8694 5.7029 15.9212 5.81096C15.9731 5.91901 16 6.03734 16 6.1572C16 6.27706 15.9731 6.39539 15.9212 6.50344C15.8694 6.6115 15.7939 6.70653 15.7004 6.78151L8.96749 12.1554C8.84956 12.2488 8.7077 12.307 8.55818 12.3234C8.40866 12.3398 8.25755 12.3138 8.12216 12.2483C7.98677 12.1827 7.87259 12.0804 7.79272 11.9529C7.71285 11.8254 7.67052 11.6781 7.67058 11.5276V8.81655C6.20285 8.90852 4.79694 9.44092 3.63644 10.3442C2.47593 11.2475 1.61476 12.4797 1.16535 13.88C1.13901 13.9638 1.08672 14.037 1.01604 14.0891C0.945356 14.1411 0.859941 14.1694 0.772142 14.1697C0.684343 14.1694 0.598928 14.1411 0.528244 14.0891C0.457561 14.037 0.40527 13.9638 0.378931 13.88C0.00469029 12.7016 -0.0940529 11.453 0.0903077 10.2304C0.274668 9.00781 0.737212 7.84385 1.44231 6.8282C2.1474 5.81254 3.07623 4.97229 4.15724 4.37217C5.23825 3.77206 6.44259 3.4281 7.67748 3.36678V0.800561C7.67742 0.650146 7.71975 0.502758 7.79962 0.3753C7.87949 0.247843 7.99367 0.145477 8.12906 0.0799434C8.26445 0.0144095 8.41556 -0.011639 8.56508 0.00478528C8.7146 0.0212095 8.85645 0.0794415 8.97439 0.172803Z"
+									fill="currentColor"
+								></path>
+							</svg>
+						</a>
 					</div>
 				</div>
 
@@ -315,5 +380,42 @@
 				</div>
 			</div>
 		</div>
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="modal-header">
+					<span class="close">&times;</span>
+				</div>
+				<div class="modal-body">
+					<h1>Spread the Word</h1>
+					<p class="text-center">
+						Introduce someone to MasterClass and share the experience of learning from the world's greatest minds.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script>
+			const modal = document.getElementById("myModal");
+			const btn = document.getElementById("share_button");
+			const span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks on the button, open the modal
+			btn.onclick = function () {
+				modal.style.display = "block";
+			};
+
+			// When the user clicks on (x), close the modal
+			span.onclick = function () {
+				modal.style.display = "none";
+			};
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function (event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			};
+		</script>
 	</body>
 </html>
