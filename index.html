@@ -4,219 +4,124 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Document</title>
-	<link rel="stylesheet" href="custom.css" />
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 </head>
 <style>
-	.section__list ul li {
-		cursor: pointer;
-	}
+    .section__list ul li {
+        cursor: pointer;
+    }
 
-	.section__list ul li:hover .line_under {
-		display: block;
-	}
+    .section__list ul li:hover .line_under {
+        display: block;
+    }
 
-	.line_under {
-		width: 20px;
-		height: 4px;
-		background: red;
-		display: none;
-	}
+    .line_under {
+        width: 20px;
+        height: 4px;
+        background: #f45c76;
+        display: none;
+    }
 
-	#statement {
-		/* background:url("https://cf-images.us-east-1.prod.boltdns.net/v1/jit/5344802162001/c08f816b-84ec-4725-9150-9b8a4b1c0f4e/main/1920x1080/56s32ms/match/image.jpg") no-repeat fixed  center ; */
-		height: 220vh;
-		position: relative;
-	}
+    #statement {
+        height: 200vh;
+    }
 
-	#statement video {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-	}
-
-	.image-fixed{
-		position: fixed;
-		top: 10%;
-	}
+    #statement video {
+        object-fit: cover;
+    }
 </style>
 
 <body>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-
-	<section id="statement" class="section-box">
-		<video autoplay>
-			<source src="video.mp4" type="video/mp4">
-		</video> 
-
-		<div class="container " style="position:relative; z-index:100; height:215vh;">
-			<div class="row paralax ">
-				<div class="col-lg-6 col-md-12 col-sm-12 mt-5">
-					<h3 class="fs-1 fw-bold">
-						Choose a category
-						to watch a class highlight.
-					</h3>
-				</div>
-
-				<div class="col-lg-6 col-md-12 col-sm-12 mt-5">
-					<div class="section__list">
-						<ul class="fs-3 fw-bold p-0 " style="list-style: none;">
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1"> Food </p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1"> Design & Style</p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1"> Arts & Entertainment</p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1">Music</p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1">Business</p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1"> Sports & Gaming</p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1">Writing</p>
-							</li>
-
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1">Science & Tech </p>
-							</li>
 
 
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1">Home & Lifestyle</p>
-							</li>
+    <section id="statement" class="section-box position-relative">
+        <video class="w-100 position-absolute top-0 bottom-0 h-100 " controls autoplay>
+            <source src="video.mp4" type="video/mp4">
+        </video>
 
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1"> Community & Government</p>
-							</li>
+        <div class="container  z-index  sticky-top top-0 ">
+            <div class="row  pt-5  ">
+                <div class="col-lg-6 col-md-12 col-sm-12 ">
+                    <h3 class="fs-1 fw-bold">
+                        Choose a category
+                        to watch a class highlight.
+                    </h3>
+                </div>
 
-							<li class="d-flex align-items-end mt-3">
-								<div class="line_under me-2"></div>
-								<p class="m-0 p-0 lh-1">Wellness</p>
-							</li>
+                <div class="col-lg-6 col-md-12 col-sm-12 mb-5">
+                    <div class="section__list">
+                        <ul class="fs-3 fw-bold p-0 " style="list-style: none;">
 
-						</ul>
-					</div>
-				</div>
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1"> Food </p>
+                            </li>
 
-			</div>
-		</div>
-	</section>
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1"> Design & Style</p>
+                            </li>
 
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
-	<div>
-		Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit nobis, sed nihil quibusdam maxime fuga saepe facilis consequatur corporis quidem eius omnis velit excepturi eos ipsum. Nam expedita dicta corrupti eum quasi rerum impedit? Nemo perspiciatis minima voluptatem inventore, natus vero quae labore hic optio, eaque adipisci suscipit fuga dolorum!
-	</div>
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1"> Arts & Entertainment</p>
+                            </li>
 
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script>
-		// window.onscroll = function () { scrollFunction() };
-		// function scrollFunction() {
-		// 	var scroll1 = document.getElementsByTagName('body')[0].scrollTop;
-		// 	console.log(scroll1);
-		// 	if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-				
-		// 	}
-		// };
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1">Music</p>
+                            </li>
 
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1">Business</p>
+                            </li>
 
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1"> Sports & Gaming</p>
+                            </li>
 
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1">Writing</p>
+                            </li>
+
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1">Science & Tech </p>
+                            </li>
 
 
-		$(document).ready(function () {
-			var width = $(window).width();
-			if (width >= 1200) {
-				$(window).scroll(function () {
-					var header = $('.header');
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1">Home & Lifestyle</p>
+                            </li>
 
-					var scroll = $(window).scrollTop();
-					console.log(scroll);
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1"> Community & Government</p>
+                            </li>
 
-					if (scroll > 200) {
-						$('.paralax').removeClass('scroll-image');
-						$('.paralax').addClass('image-fixed');
-					} else {
-						$('.paralax').removeClass('image-fixed');
-						$('.paralax').addClass('scroll-image');
-					}
+                            <li class="d-flex align-items-end mt-3">
+                                <div class="line_under me-2"></div>
+                                <p class="m-0 p-0 lh-1">Wellness</p>
+                            </li>
 
-					if(scroll > 800){
-						$('.paralax').removeClass('image-fixed');
-						$('.paralax').attr('style','position:absolute;bottom:0;');
-					}else{
-						$('.paralax').attr('style','');
-					}
+                        </ul>
+                    </div>
+                </div>
 
-					// if (scroll > 200) {
-					// 	$('.paralax').removeClass('image-fixed');
-					// 	$('#statement').css('position', 'relative');
-					// 	$('.paralax').attr('style', 'position:absolute;bottom:0;');
-					// } else {
-					// 	$('.paralax').attr('style', '');
-					// }
-				});
-			}
-		});
+            </div>
+        </div>
+    </section>
 
-	</script>
 
 </body>
 
