@@ -74,7 +74,7 @@
 							<!-- Accordion Card 1 -->
 							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
 								<div class="card-header border-0">
-									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"> What is MasterClass? </span>
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold">What is MasterClass?</span>
 									<i
 										x-bind:class="expanded ? ' rotate-180' : ''"
 										class="bi bi-chevron-down text-light"
@@ -186,6 +186,112 @@
 					</section>
 
 					<!-- Accordion Pricing & Payment -->
+					<section class="mt-4 font" style="font-weight: 300">
+						<h6 class="text-white fw-bold">Pricing & Payment</h6>
+						<div class="acc interactive" style="border-radius: 5px">
+							<!-- Accordion Card 1 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"
+										>How much does MasterClass cost?</span
+									>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											The annual membership is $212.40 and provides unlimited access to all classes and new classes as
+											they launch. All MasterClass memberships include access to our mobile and TV apps, high-definition
+											videos, and downloadable class workbooks.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accordion Card 2 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0" id="headingOne">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"> Will I be charged taxes? </span>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											Depending on where you live, you may be charged taxes in addition to your annual membership price.
+											If tax applies, you will see it stated separately on your emailed invoice. Tax rates are
+											calculated based on your location or the billing information you provided at the time of purchase.
+										</p>
+										<p class="p-color-light fw-bolder">
+											Should you have any additional questions about taxes you were charged, please view our Support
+											Helpdesk article on taxes or contact us at
+											<a class="p-color-light" href="mailto:support@masterclass.com">support@masterclass.com</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accordion Card 3 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0" id="headingOne">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"
+										>How does the 30-day guarantee work?</span
+									>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											Our goal is to make sure that you have the best learning experience possible. If MasterClass isn’t
+											for you, then <a class="p-color-light" href="mailto:support@masterclass.com">email us</a> within
+											30 days of the date you purchase your subscription, and we’ll offer a full refund.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accordion Card 4 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0" id="headingOne">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"> How do I cancel? </span>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											If you don’t want to continue, you can cancel your membership renewal through your account page.
+											Follow the prompts to cancel on the Settings page, and your membership will not renew. Please note
+											that there aren’t refunds for partially unused membership periods.
+										</p>
+										<p class="p-color-light fw-bolder">
+											If you have more questions, please
+											<a href="mailto:support@masterclass.com" class="p-color-light">contact us</a>. We’re happy to
+											help!
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				</div>
 			</div>
 		</div>
