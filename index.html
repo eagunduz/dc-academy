@@ -40,33 +40,34 @@
 				line-height: 32px;
 			}
 
-			.hidden-spacer {
-				height: 15vw;
-				overflow: auto;
-				opacity: 0.2;
+			.content-padding {
+				padding-top: 11em;
 			}
 
 			@media screen and (max-width: 768px) {
-				.hidden-spacer {
-					height: 100vw;
+				.content-padding {
+					padding-top: 44em;
 				}
 			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
-			<div class="hidden-spacer"></div>
-			<!-- Header Row -->
-			<div class="row">
-				<div class="col-10 col-md-5 mx-2 mx-sm-0 fw-bold">
+			<div class="row align-middle content-padding">
+				<!-- Header Column -->
+				<div class="col-10 col-md-7 col-xl-5 align-self-start mx-2 mx-sm-0 fw-bold">
 					<span class="header-text">Dive into MasterClass Live</span>
 				</div>
-			</div>
-			<!-- Paragraph Row -->
-			<div class="row">
-				<p class="col-10 col-md-5 mx-2 mx-sm-0 paragraph-text fw-bold">
-					Browse recordings of previous live sessions from our world-class instructors.
-				</p>
+
+				<!-- Column break, as advised on BS5 Documentation -->
+				<div class="w-100"></div>
+
+				<!-- Paragraph Column -->
+				<div class="col-10 col-md-7 col-xl-5 align-self-start mx-2 mx-sm-0">
+					<p class="paragraph-text fw-bold">
+						Browse recordings of previous live sessions from our world-class instructors.
+					</p>
+				</div>
 			</div>
 
 			<!-- Red down-arrow visible only on small screens -->
