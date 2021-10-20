@@ -27,6 +27,15 @@
 				section {
 					background-image: url(https://www.masterclass.com/assets/gifting_landing_page/mobile_ribbon-05ed4a60b7c2e177ef09112fd7d8b43d030ded0d2979d32f852ff05c5f20dc23.png),
 						url(https://www.masterclass.com/assets/gifting_landing_page/background-a7a9fb2a27b2f67536ab245a6d620b59ecc7ae2ad09bda1cf69e4979332b6ef1.jpg);
+					background-position: right center, center;
+					background-size: 75%, cover;
+				}
+			}
+
+			/* Added this rule because the image edges become visible after a certain point if left at 75% */
+			@media (max-width: 375px) {
+				section {
+					background-size: contain, cover;
 				}
 			}
 			.gift-header-text {
