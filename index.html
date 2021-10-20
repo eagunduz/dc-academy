@@ -6,7 +6,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Live Section</title>
 		<link rel="stylesheet" href="custom.css" />
 		<link
 			rel="stylesheet"
@@ -27,12 +27,56 @@
 					background-image: url("https://v.fastcdn.co/u/0b1233a0/52550836-0-Mobile-Hero.jpg");
 				}
 			}
+
+			.header-text {
+				font-size: 2em;
+				line-height: 1.2em;
+				letter-spacing: 1.4px;
+				font-weight: 700;
+			}
+
+			.paragraph-text {
+				color: #979797;
+			}
+
+			.hidden-spacer {
+				height: 15vw;
+				overflow: auto;
+				opacity: 0.2;
+			}
+
+			@media screen and (max-width: 768px) {
+				.hidden-spacer {
+					height: 100vw;
+				}
+			}
 		</style>
 	</head>
 	<body>
 		<div class="container">
+			<div class="hidden-spacer"></div>
+			<!-- Header Row -->
 			<div class="row">
-				<div class="col-12"></div>
+				<div class="col-10 col-md-8 mx-2 mx-sm-0">
+					<span class="header-text">Dive into MasterClass Live</span>
+				</div>
+			</div>
+			<!-- Paragraph Row -->
+			<div class="row">
+				<p class="col-10 col-md-8 mx-2 mx-sm-0 paragraph-text">
+					Browse recordings of previous live sessions from our world-class instructors.
+				</p>
+			</div>
+
+			<!-- Red down-arrow visible only on small screens -->
+			<div class="row justify-content-center mt-4 col-12 d-md-none" style="padding: 10px 0">
+				<img
+					data-at="image"
+					alt=""
+					src="//v.fastcdn.co/u/0b1233a0/50691930-0-Arrow-down.svg"
+					srcset="//v.fastcdn.co/u/0b1233a0/50691930-0-Arrow-down.svg 2x"
+					style="width: 2.5em"
+				/>
 			</div>
 		</div>
 	</body>
