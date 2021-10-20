@@ -6,7 +6,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<title>Accordion Section</title>
 		<link rel="stylesheet" href="custom.css" />
 		<link
 			rel="stylesheet"
@@ -14,17 +14,178 @@
 			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 			crossorigin="anonymous"
 		/>
+
+		<!-- Bootstrap Icons -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+		<style>
+			/* Cursor pointer for the whole accordion section */
+			.acc {
+				cursor: pointer;
+			}
+
+			/* Added a class to apply to all buttons and accordion cards */
+			.interactive {
+				background-color: #191c21;
+			}
+
+			/* Rotate chevron element 90 degrees */
+			.bi-chevron-down {
+				-webkit-transition: -webkit-transform 0.4s ease-in-out;
+				-ms-transition: -ms-transform 0.4s ease-in-out;
+				transition: transform 0.4s ease-in-out;
+			}
+			.rotate-180 {
+				transform: rotate(180deg);
+			}
+			.card-header span {
+				max-width: 90%;
+			}
+
+			.p-color-light {
+				color: #d3d4d6;
+			}
+
+			a.p-color-light:hover {
+				color: #d3d4d6;
+			}
+
+			.p-color-muted {
+				color: #9fa1a4;
+			}
+		</style>
+
+		<!-- Alpine Collapse Plugin -->
+		<script defer src="https://unpkg.com/@alpinejs/collapse@3.x.x/dist/cdn.min.js"></script>
+
+		<!-- Alpine JS Core -->
+		<script defer src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="mt-5">
-						<div class="d-flex flex-column justify-content-center">
-							<h1 class="text-center">Button Usage</h1>
-							<a href="#" class="cta-button cta-button--accented cta-button--mw300">Test Button</a>
+					<h1 class="text-center fw-bold fs-2 my-5">Frequently asked questions</h1>
+
+					<!-- Accordion General -->
+					<section class="mt-4 font" style="font-weight: 300">
+						<h6 class="text-white fw-bold">General</h6>
+						<div class="acc interactive" style="border-radius: 5px">
+							<!-- Accordion Card 1 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"> What is MasterClass? </span>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											MasterClass is the streaming platform that makes it possible for anyone to watch or listen to
+											hundreds of video lessons taught by 100+ of the world’s best.
+										</p>
+										<p class="p-color-light fw-bolder">
+											Whether it be in business and leadership, photography, cooking, writing, acting, music, sports and
+											more, MasterClass delivers a world class online learning experience. Video lessons are available
+											anytime, anywhere on your smartphone, personal computer, Apple TV and FireTV streaming media
+											players.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accordion Card 2 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0" id="headingOne">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold">
+										What is included in a MasterClass membership?
+									</span>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											Membership includes access to an incredible catalog of 100+ classes taught by the world’s best on
+											cooking, leadership, photography, writing and more.
+										</p>
+										<p class="p-color-light fw-bolder">
+											Each class includes around 20 video lessons that are 10 minutes long on average, along with an
+											in-depth workbook. You also get access to our smartphone and TV apps, offline lessons, our members
+											only newsletter, and our dynamic community of members around the world.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accordion Card 3 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0" id="headingOne">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold"> Where can I watch? </span>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											With MasterClass, you can learn and be inspired anytime, anywhere, including your smartphone,
+											personal computer, Apple TV, Amazon Fire TV, and Roku streaming media players. You can even
+											download your favorite lessons and watch on the plane or listen during your commute in audio-only
+											mode.*
+										</p>
+										<p class="text-muted">
+											*Downloads only on iOS and not available for all classes. Audio mode is not available for all
+											classes.
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<!-- Accordion Card 4 -->
+							<div class="card interactive" x-data="{ expanded: false }" @click="expanded = ! expanded">
+								<div class="card-header border-0" id="headingOne">
+									<span class="d-inline-block text-truncate mb-0 text-light fw-bold">
+										Which classes are right for me?
+									</span>
+									<i
+										x-bind:class="expanded ? ' rotate-180' : ''"
+										class="bi bi-chevron-down text-light"
+										style="float: right"
+									></i>
+								</div>
+
+								<div x-show="expanded" x-collapse>
+									<div class="card-body">
+										<p class="p-color-light fw-bolder">
+											MasterClass offers 100+ classes across a variety of categories, including business and leadership,
+											photography, cooking, writing, acting, music, sports and more. Every class has been designed to be
+											accessible for people with little to no experience and advanced students alike. With new classes
+											launching regulary, you can learn practical skills, ignite new passions, and get everyday wisdom.
+										</p>
+										<p class="p-color-light fw-bolder">
+											Check out our
+											<a href="https://www.masterclass.com/categories#all-classes" class="p-color-light">catalog</a> and
+											watch a few class trailers!
+										</p>
+									</div>
+								</div>
+							</div>
 						</div>
-					</div>
+					</section>
+
+					<!-- Accordion Pricing & Payment -->
 				</div>
 			</div>
 		</div>
