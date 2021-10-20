@@ -14,17 +14,25 @@
   </head>
   <style>
     .gradient-target {
-      position: absolute;
       right: -40%;
       background: linear-gradient(to left, rgb(0, 0, 0) 0px, rgba(0, 0, 0, 0) 100%) center center no-repeat;
       z-index: 1;
       pointer-events: none;
     }
+		.blog-categories::-webkit-scrollbar {
+  		display: none;
+		}
+
+		/* Hide scrollbar for IE, Edge and Firefox */
+		.blog-categories {
+			-ms-overflow-style: none;  /* IE and Edge */
+			scrollbar-width: none;  /* Firefox */
+		}
   </style>
   <body style="background-color: black">
-    <div class="row text-white">
-      <div class="mt-5 mx-3">
-        <div class="d-flex flex-row gap-3 overflow-scroll filter-menu position-relative">
+    <div class="row text-white g-0 overflow-hidden ">
+      <div class="mt-5 mx-3 position-relative ">
+        <div class="d-flex flex-row gap-3 overflow-scroll filter-menu blog-categories">
           <div class="col-auto py-1 px-3 border rounded-pill border-white">All Classes</div>
           <div class="col-auto py-1 px-3 border rounded-pill border-white">Just Added</div>
           <div class="col-auto py-1 px-3 border rounded-pill border-white">Trending</div>
@@ -41,8 +49,8 @@
           <div class="col-auto py-1 px-3 border rounded-pill border-white">Home & Lifestyle</div>
           <div class="col-auto py-1 px-3 border rounded-pill border-white">Community & Government</div>
           <div class="col-auto py-1 px-3 border rounded-pill border-white">Wellness</div>
-          <div class="position-absolute gradient-target top-0 start-0 bottom-0"></div>
         </div>
+				<div class="d-lg-none position-absolute gradient-target top-0 start-0 bottom-0"></div>
       </div>
     </div>
   </body>
