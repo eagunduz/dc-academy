@@ -15,7 +15,8 @@
 		<title>Gift Page</title>
 
 		<style>
-			section {
+			.gift-hero {
+				min-height: 400px;
 				background-image: url(https://www.masterclass.com/assets/gifting_landing_page/desktop_ribbon-43374745af3e7a330716fe0e03bf70e25a247098e39192d8068ad2ae62effe1b.png),
 					url(https://www.masterclass.com/assets/gifting_landing_page/background-a7a9fb2a27b2f67536ab245a6d620b59ecc7ae2ad09bda1cf69e4979332b6ef1.jpg);
 				background-repeat: no-repeat, repeat;
@@ -24,7 +25,7 @@
 			}
 
 			@media (max-width: 768px) {
-				section {
+				.gift-hero {
 					background-image: url(https://www.masterclass.com/assets/gifting_landing_page/mobile_ribbon-05ed4a60b7c2e177ef09112fd7d8b43d030ded0d2979d32f852ff05c5f20dc23.png),
 						url(https://www.masterclass.com/assets/gifting_landing_page/background-a7a9fb2a27b2f67536ab245a6d620b59ecc7ae2ad09bda1cf69e4979332b6ef1.jpg);
 					background-position: right center, center;
@@ -34,7 +35,7 @@
 
 			/* Added this rule because the image edges become visible after a certain point if left at 75% */
 			@media (max-width: 375px) {
-				section {
+				.gift-hero {
 					background-size: cover, cover;
 				}
 			}
@@ -49,7 +50,7 @@
 				color: #b7b7b7;
 			}
 
-			.btn {
+			.btn--gift-hero {
 				border-radius: 10px;
 				color: white;
 				background-color: #f24462;
@@ -58,8 +59,8 @@
 	</head>
 
 	<body>
-		<section>
-			<div class="container">
+		<section class="gift-hero d-flex">
+			<div class="container my-auto">
 				<div class="row mb-3">
 					<div class="col-12 col-md-6">
 						<div class="my-5 text-center text-md-start">
@@ -72,7 +73,7 @@
 								classes taught by the world`s best.
 							</p>
 							<a
-								class="btn btn-danger btn-lg mt-3 fs-6 text-uppercase"
+								class="btn--gift-hero btn-danger btn-lg mt-3 fs-6 text-uppercase text-decoration-none"
 								href="https://www.masterclass.com/plans?gift=true"
 							>
 								Give Annual Membership
