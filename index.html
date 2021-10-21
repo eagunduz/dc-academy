@@ -21,33 +21,50 @@
     }
 		.blog-categories::-webkit-scrollbar {
   		display: none;
+
 		}
+    .blog-categories > div:hover {
+      background-color: gray;
+
+    } 
+    
 
 		/* Hide scrollbar for IE, Edge and Firefox */
 		.blog-categories {
 			-ms-overflow-style: none;  /* IE and Edge */
 			scrollbar-width: none;  /* Firefox */
+
 		}
+
+    
+
+    .blog-categories > div:last-child{
+      margin-right: 1rem;
+
+      }  
+    
+    
+
   </style>
   <body style="background-color: black">
-    <div class="row text-white g-0 overflow-hidden ">
-      <div class="mt-5 mx-3 position-relative ">
+    <div class="row text-white overflow-hidden ">
+      <div class="mt-5 mx-3 position-relative">
         <div class="d-flex flex-row gap-3 overflow-scroll filter-menu blog-categories">
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">All Classes</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Just Added</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Trending</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Most Popular</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Food</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Design & Style</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Arts & Entartainment</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Music</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Business</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Sports & Gaming</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Writing</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Science & Tech</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Home & Lifestyle</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Community & Government</div>
-          <div class="col-auto py-1 px-3 border rounded-pill border-white">Wellness</div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">All Classes</a></div>
+          <div class="col-auto pt-1 pb-2 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Just Added</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Trending</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Most Popular</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Food</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Design & Style</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Arts & Entartainment</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Music</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Business</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Sports & Gaming</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Writing</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Science & Tech</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Home & Lifestyle</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Community & Government</a></div>
+          <div class="col-auto py-1 px-3 border rounded-pill border-white"><a href class="text-white text-decoration-none">Wellness</a></div>
         </div>
 				<div class="d-lg-none position-absolute gradient-target top-0 start-0 bottom-0"></div>
       </div>
