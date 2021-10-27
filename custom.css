@@ -15,6 +15,10 @@ body {
   ) !important; /* overrides bootstrap only for development purposes */
 }
 
+.index-section:not(:first-child) {
+  margin-top: 4rem;
+}
+
 /* Button Styling */
 .cta-button {
   padding: 0.25rem 1.25rem;
